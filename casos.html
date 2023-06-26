@@ -1,0 +1,648 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="css2.css">
+    <link rel="Website Icon"  href="imagenes/libro1.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Money_Coach</title>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+</head>
+<>
+
+    <main>
+    <section class="parallax bg">
+        <style>
+            p1{
+                font-size: 100px;
+                color: #FFEEB3;
+            }
+           h6{
+            font-size: 30px;
+           }
+           .justificado{
+            text-align: justify;
+           }
+        </style>
+
+
+ <!--	inicio de titulo--------------->
+
+ 
+ 
+        <p1>MoneyCoach<br><br><h6>Casos</h6>
+        </p1>
+        
+        
+        
+       
+      </section>
+    </main>
+
+     <!--	fin de titulo --------------->
+
+
+     <!--	inicio de menu--------------->
+    <nav><nav>
+      <ul>
+        <li>
+            <a class="menu servicios" href="MONECOCH.html" data-title="Inicio">
+                <span>
+                    <span>
+                        Inicio
+                    </span>
+                </span>
+            </a>
+
+        </li>
+        <li>
+            <a class="menu proyectos" href="CAPITULOS.html" data-title="Capitulos">
+                <span>
+                    <span>
+                        Capitulos
+                    </span>
+                </span>
+            </a>
+            
+        </li>
+        <li>
+            <a class="menu recursos" href="GLOSARIO.html" data-title="Glosario">
+                <span>
+                    <span>
+                        Glosario
+                    </span>
+                </span>
+            </a>
+            
+        </li>
+        <li>
+            <a class="menu contacto" href="acerca_de.html" data-title="contactanos">
+                <span>
+                    <span>
+                        contactanos
+                    </span>
+                </span>
+            </a>
+            
+        </li>
+    </ul>
+    </nav></nav>
+    
+    <br><br><br>
+
+
+     <!--	fin de menu--------------->
+<br><br><br>
+
+
+<style>
+    :root {
+  --clr-primary: teal;
+  --clr-secondary: crimson;
+  
+  --bg-primary: #0d1a2d;
+  --bg-secondary: #14273e;
+  
+  --text-primary: #fff;
+  --text-secondary: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 
+    repeat(auto-fit, minmax(min(35ch, 100%), 1fr));
+}
+
+.section-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  text-align: center;
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-bottom: 0.5em;
+}
+
+.flex-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flow-content {
+  display: grid;
+  align-content: start;
+  gap: 1rem;
+}
+
+[data-spacing="sm"] {
+  gap: 0.25rem;
+}
+
+.mx-auto {
+  width: fit-content;
+  margin-inline: auto;
+}
+
+/* starts here */
+.card {
+  width: min(100% - 2rem, 35ch);
+  margin-inline: auto;
+  background-color: var(--bg-secondary);
+  text-align: center;
+  border-radius: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.card__name {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+
+.card__img {
+  width: 6rem;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  
+  border: 2px solid var(--text-secondary);
+  border-radius: 50px;
+}
+
+.card__front {
+  padding: 2em 2em 2.5em 2em;
+  transition: 
+    opacity 250ms ease,
+    transform 450ms ease;
+}
+
+.card[data-visible="false"] .card__front {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card__footer {
+  background-color: var(--bg-primary);
+  height: 1.5rem;
+  position: relative;
+  z-index: 5;
+}
+
+.card__back {
+  position: absolute;
+  padding: 2em 2em 2.5em 2em;
+  inset: 0;
+  transition: 
+    transform 450ms ease,
+    opacity 150ms ease;
+  z-index: 1;
+  overflow: auto;
+}
+
+.card[data-visible="false"] .card__back {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.card[data-visible="true"] .card__front {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: 
+    opacity 150ms ease,
+    transform 450ms ease 50ms;
+}
+
+.card[data-visible="true"] .card__back {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 
+    transform 350ms ease,
+    opacity 450ms ease 100ms;
+}
+
+.card__social {
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.card__toggle {
+  text-align: 1;
+  border-radius:50%;
+  width: 3rem;
+  aspect-ratio: 1 / 1;
+  padding: 0.5em;
+  border: 0;
+  background-color: var(--clr-primary);
+  color: var(--text-primary);
+  
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  cursor: pointer;
+  transition: background-color 250ms ease;
+}
+
+.card__toggle-icon {
+  transition: rotate 250ms ease;
+}
+
+.card[data-visible="true"] .card__toggle {
+  background-color: var(--clr-secondary);
+}
+
+.card[data-visible="true"] .card__toggle-icon {
+  rotate: 315deg;
+}
+</style>
+<section>
+    <div class="container flow-content">
+      <h2 class="section-title">Testimonios.</h2>
+      <ul role="list" class="grid">
+        <li>
+          <article class="card" data-visible="false">
+            <div class="card__front flow-content">
+              <img class="card__img mx-auto" src="imagenes/testi1.jpeg" alt="Cristian (from Unsplash)" />
+              <div class="flow-content" data-spacing="sm">
+                <p class="card__name">Cristian</p>
+              </div>
+            </div>
+            <div class="card__back flow-content">
+              <q>Es un libro muy útil para introducirte en el mundo de las finanzas personales. Habla de manera muy general de diversos temas como inversiones, seguros, impuestos, compra/venta de bienes inmuebles, testamentos, tarjetas de crédito y débito, etc. Mi recomendación es que no te quedes sólo con lo que dice el libro, sino que indagues un poco más en cada tema para que le saque el máximo provecho. <br><br>
+                Definitivamente es un libro que hay que leer si quieres aprender a llevar unas finanzas sanas.</q>
+             
+            </div>
+            <footer class="card__footer">
+              <button data-card-controller class="card__toggle">
+                <i class="fa fa-plus"></i>
+              </button>
+            </footer>
+          </article>
+        </li>
+        <li>
+          <article class="card" data-visible="false">
+            <div class="card__front flow-content">
+              <img class="card__img mx-auto" src="imagenes/testi2.jpeg" alt="Cristian (from Unsplash)" />
+              <div class="flow-content" data-spacing="sm">
+                <p class="card__name">Alejandro Gomez</p>
+              </div>
+            </div>
+            <div class="card__back flow-content">
+              <q>Gran libro, altamente recomendado. Debería incluirse en la educación básica de cada estudiante en México. Tuve la oportunidad de tomar algunos cursos impartidos por Rodrigo Coutiño y queda muy claro que es alguien muy preparado en el tema (administración financiera, presupuesto, inversiones, bolsa, impuestos, etcétera) y, sobre todo, que logro transmitir estos temas, que muchos evitan por creerlos complejos, de una manera clara, objetiva y muy digerible.</q>
+              
+            </div>
+            <footer class="card__footer">
+              <button data-card-controller class="card__toggle">
+                <i class="fa fa-plus"></i>
+              </button>
+            </footer>
+          </article>
+        </li>
+        <li>
+          <article class="card" data-visible="false">
+            <div class="card__front flow-content">
+              <img class="card__img mx-auto" src="imagenes/testi3.jpeg" alt="Cristian (from Unsplash)" />
+              <div class="flow-content" data-spacing="sm">
+                <p class="card__name">Pau</p>
+              </div>
+            </div>
+            <div class="card__back flow-content">
+              <q>Excelente opcion para adentrarse en el mundo de las finanzas, tiene un lenguaje muy claro, graficas, tablas y hasta enlaces para descargar archivos para comenzar a establecer habitos y metas financieras.
+<br><br>
+                Todo está muy bien explicado y desglosado, fácil de comprender para cualquier persona que no conozca mucho del tema.
+                <br><br>
+                Aún siendo un área que no me gusta mucho, disfruté el libro y puedo decir que aprendí bastante.</q>
+              
+            </div>
+            <footer class="card__footer">
+              <button data-card-controller class="card__toggle">
+                <i class="fa fa-plus"></i>
+              </button>
+            </footer>
+          </article>
+        </li>
+        <li>
+          <article class="card" data-visible="false">
+            <div class="card__front flow-content">
+              <img class="card__img mx-auto" src="imagenes/testi4.jpeg" alt="Cristian (from Unsplash)" />
+              <div class="flow-content" data-spacing="sm">
+                <p class="card__name">Alan Peña</p>
+              </div>
+            </div>
+            <div class="card__back flow-content">
+              <q>Todo lo que pudo habernos enseñado en la escuela. Este libro nos habla de impuestos, planes de ahorro, bancos, tarjetas de crédito, créditos hipotecarios, inversiones, etc., de una manera muy práctica y sencilla, es un excelente libro para iniciar en el mundo de las finanzas personales e inversiones.</q>
+             
+            </div>
+            <footer class="card__footer">
+              <button data-card-controller class="card__toggle">
+                <i class="fa fa-plus"></i>
+              </button>
+            </footer>
+          </article>
+        </li>
+        <li>
+          <article class="card" data-visible="false">
+            <div class="card__front flow-content">
+              <img class="card__img mx-auto" src="imagenes/testi5.jpeg" alt="Cristian (from Unsplash)" />
+              <div class="flow-content" data-spacing="sm">
+                <p class="card__name">Jesus Reveron </p>
+              </div>
+            </div>
+            <div class="card__back flow-content">
+              <q>Muy buen libro. Todo el mundo debería leer este libro para aprender sobre finanzas personales y aspirar a tener libertad financiera. Soy extranjero y vivo en México, así que, además de refrescar la mayoría de conceptos también me ayudó para conocer algunos conceptos que solo existen en México.</q>
+              
+            </div>
+            <footer class="card__footer">
+              <button data-card-controller class="card__toggle">
+                <i class="fa fa-plus"></i>
+              </button>
+            </footer>
+          </article>
+        </li>
+        <li>
+          <article class="card" data-visible="false">
+            <div class="card__front flow-content">
+              <img class="card__img mx-auto" src="imagenes/testi6.jpg" />
+              <div class="flow-content" data-spacing="sm">
+                <p class="card__name">Ana Karen</p>
+              </div>
+            </div>
+            <div class="card__back flow-content">
+              <q>Este libro debe ser incorporado al plan de estudio en nuestras escuelas primarias y secundarias. Un libro excelente en todo sentido: fabricación, contenido, redacción, edición...en fin, un libro que expone de forma amena un tema que pudiera resultar abrumador e intimidante para muchos...</q>
+              
+            </div>
+            <footer class="card__footer">
+              <button data-card-controller class="card__toggle">
+                <i class="fa fa-plus"></i>
+              </button>
+            </footer>
+          </article>
+        </li>   
+      </ul>
+    </div>
+  </section>
+  <div style="height: 200px;"></div>
+
+  <script>
+    // Inspiration -  Frontend Mentor
+// https://www.frontendmentor.io/challenges/myteam-multipage-website-mxlEauvW
+const cardControllers = document.querySelectorAll("[data-card-controller]");
+
+cardControllers.forEach(controller => {
+  controller.addEventListener("click", (e) => {
+    const card = e.currentTarget.parentElement.parentElement;
+    const isVisible = card.dataset.visible;
+
+    if (isVisible === "false") {
+      card.setAttribute("data-visible", true);
+    } else {
+      card.setAttribute("data-visible", false);
+    }
+  })
+})
+
+  </script>
+  <style>
+   
+
+  
+h2 {
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 70px;
+    letter-spacing: .25em;
+    --glow-color: rgba(61 61 61 / 100%);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    [letter-animation] > span {
+        display: inline-block;
+        white-space: break-spaces;
+      }
+      
+      [letter-animation="hover"]:hover > span {
+        transform: scale(.75);
+        }
+
+    [letter-animation="hover"] > span {
+        transition: transform .3s ease;
+        cursor: pointer;
+    }
+    [letter-animation="hover"]:hover > span:hover {
+        transform: scale(1.25);
+    }
+
+
+
+
+      [letter-animation="breath"] > span {
+        animation:
+          breath 2000ms ease
+          calc(var(--index) * 100 * 1ms)
+          infinite alternate;
+      }
+}
+
+@keyframes breath {
+    from {
+      animation-timing-function: ease-out;
+    }
+    to {
+      transform: translateY(-5px) scale(1.25);
+      text-shadow: 0 0 40px var(--glow-color);
+      animation-timing-function: ease-in-out;
+    }
+  }
+  </style>
+
+
+<h2 style="font-size: 50px;" split-by="letter" letter-animation="hover" >Entrevista a Rodrigo Coutiño</h2>
+<br><br>
+<h2 split-by="letter" style="font-size: 50px;" letter-animation="breath" >Video</h2>
+
+<script>
+    const {matches:motionOK} = window.matchMedia('(prefers-reduced-motion: no-preference)')
+
+
+if (motionOK) {
+      const splitTargets = document.querySelectorAll('[split-by]')
+    // document split manipulations
+    const span = (text, index) => {
+        const node = document.createElement('span')
+      
+        node.textContent = text
+        node.style.setProperty('--index', index)
+      
+        return node
+      }
+      
+    const byLetter = text =>
+    [...text].map(span)
+    
+    const byWord = text =>
+    text.split(' ').map(span)
+
+    splitTargets.forEach(node => {
+        const type = node.getAttribute('split-by')
+        let nodes = null
+    
+        if (type === 'letter')
+            nodes = byLetter(node.innerText)
+        else if (type === 'word')
+            nodes = byWord(node.innerText)
+    
+        if (nodes)
+            node.firstChild.replaceWith(...nodes)
+    })
+  }
+</script>
+
+<br><br><br><br>
+<video src="imagenes/👉 Retírate JOVEN y con MILLONES de Pesos _ ¡Aprende a INVERTIR ya! 💰Entrevista a RODRIGO COUTIÑO.mp4" controls poster="imagenes/poster.jpeg" style="border-radius: 10px; box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+0 0  0 2px rgb(255,255,255),
+0.3em 0.3em 1em rgba(0,0,0,0.3);;"></video>
+         <!--	Fin de objetivos con imagenes--------------->
+       
+       <!--	inicio de redes sociales--------------->
+       <div class="container-bar">
+        <input type="checkbox" id="btn-social">
+        <label for="btn-social" class="fa fa-play"></label>
+            <div class="icon-social">
+                <a href="https://www.facebook.com/profile.php?id=100093142003433&mibextid=ZbWKwL" class="fa fa-facebook">
+                    <span id="title">Facebook</span>
+                </a>
+                <a href="https://www.instagram.com/mone_ycouch/?igshid=MzNlNGNkZWQ4Mg%3D%3D" class="fa fa-instagram">
+                    <span id="title">Instagram</span>
+                </a>
+                <a href="https://wa.link/5wkawx" class="fa fa-whatsapp">
+                    <span id="title">
+                        WhatsApp
+                    </span>
+                </a>
+                
+            </div>
+        </div>
+
+            <!--	fin de redes sociales--------------->
+
+             <!--inicio de moneytips	--------------->
+             <div class="contenedor">
+              <a href="#">
+                   <figure>
+                      
+                       <div class="capa">
+                           <h3><strong>#MONEY</strong>TIP</h3>
+                           <p>existen desenas de bancos en mexico rompe con el paradigma de que "todos los bancos son malos".si el tuyo no te gusta !cambiate a otro!</p>
+                       </div>
+                   </figure>
+               </a>
+           </div>
+
+
+            <!--fin de moneytips	--------------->
+
+
+             <!--inicio de slider automatico	--------------->
+
+
+             <div style="height: 500px;"></div>
+
+             <div class="slider" style="position: absolute;
+             
+             left: 50%;
+             transform: translate(-50%, -50%);">
+                <ul>
+                    <li>
+                        <img src="imagenes/libro1.png">
+                    </li>
+                    <li>
+                        <img src="imagenes/libro2.png">
+                    </li>
+                    <li>
+                        <img src="imagenes/libro3.png" >
+                    </li>
+                    <li>
+                        <img src="imagenes/investor.png" width="20%">
+                    </li>
+                    
+                </ul>
+                <a href="https://investor.com.mx/" class="btn btn-2">InvestorHouse
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+
+
+            <div id="container">
+                
+ 
+       
+        
+        
+    </div>
+    <div style="height: 200px;"></div>
+
+                <!--fin de slider automatico	--------------->
+    
+<!--	inicio de pie de pagina--------------->
+<footer class="pie-pagina">
+  <div class="grupo-1">
+      <div class="box">
+          <figure>
+              <a href="#">
+                  <img src="imagenes/pie.jpg" alt="Logo de SLee Dw">
+              </a>
+          </figure>
+      </div>
+      <div class="box">
+          <h2>SOBRE NOSOTROS</h2>
+          <p><a href="login_formulario/indets.html">Que te parece la pagina?</a></p>
+          
+      </div>
+      <div class="box">
+          <h2>SIGUENOS</h2>
+          <div class="red-social">
+              <a href="https://www.facebook.com/profile.php?id=100093142003433&mibextid=ZbWKwL" class="fa fa-facebook"></a>
+              <a href="https://www.instagram.com/mone_ycouch/?igshid=MzNlNGNkZWQ4Mg%3D%3D" class="fa fa-instagram"></a>
+              <a href="https://wa.link/5wkawx" class="fa fa-whatsapp"></a>
+              
+          </div>
+      </div>
+  </div>
+  <div class="grupo-2">
+      <small>&copy; 2023 <b>SLee Dw</b> - Todos los Derechos Reservados.</small>
+  </div>
+</footer>
+
+
+            <!--fin de pie de pagina	--------------->
+
+
+
+             
+
+
+           
+
+</body>
+</html>

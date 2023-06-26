@@ -1,0 +1,670 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="css2.css">
+    <link rel="Website Icon"  href="imagenes/libro1.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Money_Coach</title>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+</head>
+<body>
+
+    <main>
+    <section class="parallax bg">
+        <style>
+            p1{
+                font-size: 100px;
+                color: #FFEEB3;
+            }
+           h6{
+            font-size: 30px;
+           }
+           .justificado{
+            text-align: justify;
+           }
+        </style>
+
+
+ <!--	inicio de titulo--------------->
+
+ 
+ 
+        <p1>MoneyCoach<br><br><h6>IMSS Y ISSTE</h6>
+        </p1>
+        
+        
+        
+       
+      </section>
+    </main>
+
+     <!--	fin de titulo --------------->
+
+
+     <!--	inicio de menu--------------->
+    <nav><nav>
+      <ul>
+        <li>
+            <a class="menu servicios" href="MONECOCH.html" data-title="Inicio">
+                <span>
+                    <span>
+                        Inicio
+                    </span>
+                </span>
+            </a>
+
+        </li>
+        <li>
+            <a class="menu proyectos" href="CAPITULOS.html" data-title="Capitulos">
+                <span>
+                    <span>
+                        Capitulos
+                    </span>
+                </span>
+            </a>
+            
+        </li>
+        <li>
+            <a class="menu recursos" href="GLOSARIO.html" data-title="Glosario">
+                <span>
+                    <span>
+                        Glosario
+                    </span>
+                </span>
+            </a>
+            
+        </li>
+        <li>
+            <a class="menu contacto" href="acerca_de.html" data-title="contactanos">
+                <span>
+                    <span>
+                        contactanos
+                    </span>
+                </span>
+            </a>
+            
+        </li>
+    </ul>
+    </nav></nav>
+    
+    <br><br><br>
+
+
+     <!--	fin de menu--------------->
+<br><br><br>
+
+
+<style>
+    /* Basic */
+@import url("https://use.typekit.net/ovt6ynt.css");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Spectral:wght@200;300;400;500;600;700;800&display=swap");
+
+
+
+.wrapper {
+  background-color: #f6f8ff;
+  width: 100%;
+  min-height: 100vh;
+  min-width: 90vh;
+  background: transparent;
+  opacity: 1;
+}
+
+
+.wrapper.pre  {
+    background-size: cover !important;
+    background: url(https://images.unsplash.com/photo-1523633589114-88eaf4b4f1a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3870&q=80);
+    background: url(https://images.unsplash.com/photo-1462556791646-c201b8241a94?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2896&q=80);
+    position: absolute;
+    top: 0;
+    z-index: -2;
+    opacity: 0.75;
+  background: url(https://assets.codepen.io/4927073/mybg.jpg);
+}
+
+
+.wrapper .line {
+  width: 50%;
+  margin: 25px auto 0 auto;
+  height: 1px;
+  background-color: #c3d2e3;
+}
+h2.tab-title {
+  font-weight: 300;
+}
+h2.tab-title.tab-primary {
+  color: #636983;
+}
+h2.tab-title.tab-success {
+  color: #51a14c;
+}
+h2.tab-title.tab-default {
+  color: #525252;
+}
+h2.tab-title.tab-warning {
+  color: #b12222;
+}
+.container {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  width: 90%;
+  padding: 10px 0px;
+  text-align: center;
+  margin: auto;
+}
+.container .card {
+  max-width: 600px;
+  min-height: 140px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #e3e3e3;
+  margin: 0 auto;
+}
+.tabs {
+  text-align: left;
+  position: relative;
+}
+.tabs input {
+  position: absolute;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+}
+.tabs input + label {
+  font-weight: 300;
+  color: #666;
+  margin: 10px 0;
+  width: 110px;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.3s;
+  text-align: center;
+  font-size: 12px;
+  border: none;
+}
+.tabs input + label:hover {
+  color: #777;
+}
+.tabs .tabsShadow {
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.04);
+  box-sizing: border-box;
+  position: absolute;
+  height: 35px;
+  z-index: 0;
+  top: 0;
+  pointer-events: none;
+}
+.content {
+    
+  margin: 0px auto;
+  text-align: left;
+  color: #666;
+  font-size: 13px;
+  line-height: 20px;
+  position: relative;
+  height: 220px;
+      background: hsl(232deg 16% 15%);
+
+}
+.content .item {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  position: absolute;
+  padding: 0px 0px;
+}
+.content p {
+  margin: 10px 0;
+}
+.glider {
+  width: 110px;
+  height: 3px;
+  background: linear-gradient(90deg, #5b3cc4 0%, #3c6cc4 100%);
+  border-radius: 3px;
+  position: absolute;
+  box-shadow: 0px 0px 8px 0px rgba(91, 60, 196, 0.4);
+  transition: all 0.3s;
+}
+#tab-1:checked ~ .glider {
+  left: 0px;
+}
+#tab-2:checked + label {
+  color: #51a14c;
+}
+#tab-2:checked ~ .glider {
+  background: linear-gradient(90deg, #51a14c 0%, #10c33e 100%);
+  box-shadow: 0px 0px 8px 0px rgba(47, 187, 12, 0.62);
+}
+#tab-2:checked ~ .glider {
+  left: 113px;
+}
+#tab-3:checked + label {
+  color: #525252;
+}
+#tab-3:checked ~ .glider {
+  background: linear-gradient(90deg, #4a4a4a 0%, #9b9b9b 100%);
+}
+#tab-3:checked ~ .glider {
+  left: 226px;
+}
+#tab-4:checked + label {
+  color: #b12222;
+}
+#tab-4:checked ~ .glider {
+  background: linear-gradient(90deg, #b93232 0%, #ff5d5d 100%);
+  box-shadow: 0px 0px 8px 0px rgba(231, 13, 93, 0.57);
+}
+#tab-4:checked ~ .glider {
+  left: 339px;
+}
+#tab-1:checked ~ section #content-1,
+#tab-2:checked ~ section #content-5,
+#tab-3:checked ~ section #content-3,
+#tab-4:checked ~ section #content-4 {
+  opacity: 1;
+  visibility: visible;
+}
+@media (max-width: 700px) {
+  .tabs input + label,
+  .glider {
+    width: 70px;
+  }
+  #tab-1:checked ~ .glider {
+    left: 0px;
+  }
+  #tab-2:checked ~ .glider {
+    left: 73px;
+  }
+  #tab-3:checked ~ .glider {
+    left: 146px;
+  }
+  #tab-4:checked ~ .glider {
+    left: 219px;
+  }
+}
+
+.tabs input + label {
+    margin: 12px -9px;
+    width: 19%;
+    transition: all 0.3s;
+    text-align: center;
+    border: none;
+    border-bottom: 0.5pt solid #1d1e22;
+    color: #e7e9f5;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    padding: 5pt 10pt;
+    vertical-align: top;
+    justify-content: flex-start;
+    background: #333;
+    box-shadow: 1px 1px 2px 1px #231f20;
+    font-family: "antique-olive-condensed";
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 8pt;
+    background: #26292C;
+    margin-bottom: 0.5px;
+    border-radius: 7px 7px 0 0 !important;
+    border-top: 1px solid #3B3D3F;
+    letter-spacing: .1666666667em !important;
+    font-family: 'antique-olive' !important;
+      background: hsl(232deg 6% 17%);
+
+}
+
+.content {
+    margin: 0px auto;
+    text-align: left;
+    color: #666;
+    font-size: 13px;
+    line-height: 20px;
+    position: relative;
+    
+    height: 240px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 10%);
+    display: block;
+    padding: 1.25rem;
+    z-index: 2;
+    background: #26292C;
+    border-top: 1px solid #3B3D3F;
+      background: hsl(232deg 16% 15%);
+
+}
+.container .card {
+    max-width: 80%;
+    min-height: 140px;
+    border-radius: 10px;
+    border: none;
+    margin: 0 auto;
+    z-index: 4 !important;
+    position: relative;
+    background: linear-gradient(#141e30, #243b55);
+    background: #16181A;
+    border-top: 1px solid #3B3D3F;
+      background: hsl(232deg 18% 8%);
+
+}
+p {
+  font-family: muli, sans-serif;
+  font-family: stix-two-text, serif;
+  font-family: source-serif-pro, serif;
+}
+.content p {
+    margin: 10px 15px 10px 0;
+    font-family: "muli";
+    letter-spacing: 0.75px;
+    font-size: 18px;
+    font-style: normal;
+    color: #f0f2fc;
+    line-height: 30px;
+    margin-top: 0px;
+    font-family: "freight-display-pro";
+    font-weight: 300 !important;
+}
+h2.tab-title.tab-warning,
+h2.tab-title.tab-priamary,
+h2.tab-title.tab-primary,
+h2.tab-title.tab-default {
+  font-family: "freight-display-pro";
+  display: inline-flex;
+  color: #fff;
+  background: linear-gradient(55deg, #f37 0%, #f93 80%);
+  background-position: bottom center;
+  margin-bottom: 0pt !important;
+  margin-top: 6pt;
+  height: 22pt;
+    text-fill-color: transparent !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    -webkit-background-clip: text !important;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -ms-background-clip: text;
+    -ms-text-fill-color: transparent;
+      text-transform: capitalize;
+    font-size: 24px;
+    letter-spacing: 0px;
+      font-family: 'Manrope' !important;
+    font-weight: 800 !important;
+
+}
+
+h2.tab-title.tab-primary {
+    background: linear-gradient(55deg, #5E18FF, #750EFF);
+}
+
+h2.tab-title.tab-primary {
+    background: linear-gradient(10deg, #02CE85, #02CEAB);
+}
+
+h2.tab-title.tab-primary {
+    background: linear-gradient(300deg, hsl(205deg 100% 50%), hsl(215deg 100% 50%), hsl(245deg 100% 55%), #750EFF);
+  background: linear-gradient(60deg, hsl(202deg 100% 75%),hsl(205deg 100% 64%),hsl(230deg 100% 75%), hsl(270deg 100% 72%));
+}
+
+h2.tab-title.tab-warning {
+    background: linear-gradient(70deg, #C51574, #97389B);
+}
+
+.tabs input {
+  position: relative;
+  opacity: 0;
+  margin: auto !important;
+  padding: 0;
+}
+label.tab.tab-primary {
+  border-radius: 6pt 0 0 6pt;
+}
+label.tab.tab-warning {
+  border-radius: 0 6pt 6pt 0;
+}
+#tab-1:checked + label {
+  color: deepskyblue;
+}
+#tab-3:checked + label {
+  color: #ffadfa;
+  color: #ffaa75;
+}
+#tab-4:checked + label {
+  color: #ffadfa;
+}
+#tab-1:checked ~ .glider {
+  left: 1.6%;
+}
+
+#tab-2:checked ~ .glider {
+  left: 21.85%;
+}
+#tab-3:checked ~ .glider {
+  background: linear-gradient(
+    90deg,
+    #faffcc 0%,
+    #f5eea3 10%,
+    #ffe48a 40%,
+    #ffb54d 65%,
+    #ff974d 85%,
+    #ff8052 100%
+  );
+  left: 42.15%;
+}
+#tab-4:checked ~ .glider {
+  background: linear-gradient(90deg, #b9326f 0%, #ff5ddc 100%);
+  box-shadow: 0px 0px 8px 0px rgba(231, 13, 93, 0.57);
+  left: 62.365% !important;
+
+}
+
+.glider {
+    width: 15%;
+    padding: 0px 13px;
+    height: 4.5px;
+    border-radius: 0 0 1px 1px;
+    position: absolute;
+    box-shadow: 0px 0px 8px 0px hsl(262deg 100% 70% / 70%);
+    background: linear-gradient(113deg, hsl(260deg 100% 64%) 0%, hsl(190deg 100% 55%) 100%);
+    transition: all 0.3s;
+    top: 36px;
+    z-index: 2;
+}
+
+span.numit {
+    font-size: 12pt;
+    font-family: 'muli';
+    font-weight: 600;
+    text-shadow: 0.5px 0.5px 0.5px #e7e9f5;
+    color: #0e101a;
+    margin-right: 2px;
+    margin-left: -2px;
+    padding: 0;
+    color: aliceblue;
+    text-shadow: 0.5pt 0.5pt 0.5pt #2d3748;
+}
+</style>
+
+<div style="height: 200px;"></div>
+<div class = "wrapper pre">
+  
+</div>
+<div class="wrapper">
+  <div class="title" style="color: #0e101a; font-size: 50px;">
+    Informacion
+    <div class="line"></div>
+  </div>
+  <div class="container">
+    <div class="card tabs">
+      <input id="tab-1" type="radio" class="tab tab-selector" checked="checked" name="tab" />
+      <label for="tab-1" class="tab tab-primary">Trabajo</label>
+      <input id="tab-2" type="radio" class="tab tab-selector" name="tab" />
+      <label for="tab-2" class="tab tab-success">Institutos</label>
+      <input id="tab-3" type="radio" class="tab tab-selector" name="tab" />
+      <label for="tab-3" class="tab tab-default">Familia</label>
+      <input id="tab-4" type="radio" class="tab tab-selector" name="tab" />
+      <label for="tab-4" class="tab tab-warning">Recuerda</label>
+      <div class="tabsShadow"></div>
+      <div class="glider"></div>
+      <section class="content">
+        <div class="item" id="content-1">
+          <p>
+            <span class = "numit"></span> Si trabajas bajo el régimen de salarios para alguna empresa privada o para el gobierno, es muy seguro que ya cuentes con una cobertura médica; un seguro social administrado por el gobierno. Si tu empleo es en una empresa privada, estarás afiliado al Instituto Mexicano del Seguro Social, mejor conocido como IMSS, y si trabajas para el gobierno federal o para el gobierno de algunos estados, estarás afiliado al Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado, mejor conocido como ISSSTE.
+          </p>
+        </div>
+        <div class="item" id="content-1">
+          <p>
+            <span class = "numit"></span> Si trabajas bajo el régimen de salarios para alguna empresa privada o para el gobierno, es muy seguro que ya cuentes con una cobertura médica; un seguro social administrado por el gobierno. Si tu empleo es en una empresa privada, estarás afiliado al Instituto Mexicano del Seguro Social, mejor conocido como IMSS, y si trabajas para el gobierno federal o para el gobierno de algunos estados, estarás afiliado al Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado, mejor conocido como ISSSTE.
+          </p>
+        </div>
+        <div class="item" id="content-5" >
+          <p>
+             Ambos institutos fueron creados por el gobierno de México para que los trabajadores tuvieran una cobertura médica, además de otros beneficios de seguridad social, como planes de retiro, seguro de vida, o seguro de invalidez. Aunque ambos institutos son administrados por el gobierno, sus servicios no son gratuitos y requieren de una afiliación que es pagada por cuotas de acuerdo al salario del trabajador
+            preferenciales para los afiliados, o paquetes turísticos como TURISSSTE, que ofrecen paquetes vacacionales de bajo costo.
+             </p>
+        </div>
+        <div class="item" id="content-3">
+          <p>
+            <span class = "numit"></span> Si tú y tu familia no cuentan con algún tipo de cobertura médica, ya sea por medio de una institución gubernamental o por medio de un seguro privado, ya es tiempo de que te preocupes y lo resuelvas. Los costos médicos son muy elevados, y en caso de una enfermedad o accidente tus finanzas podrían afectarse si no cuentas con una cobertura médica.</p>
+        </div>
+        <div class="item" id="content-4">
+          <p>
+            <span class = "numit"></span> Recuerda: puedes tener una cobertura médica si adquieres un Seguro de Gastos Médicos Mayores privado por medio de una aseguradora, lo que te permitiría recibir atención médica en hospitales privados. Otra opción podría ser afiliarte voluntariamente al IMSS. Éste permite, que cualquier persona que no se encuentre bajo el régimen de salarios y, por ende, no cuente con una afiliación a estos institutos, pague una cuota que le permita recibir los servicios del IMSS. Es muy importante que antes de tomar la decisión de afiliarte al IMSS, cotices un SGMM privado y compares ambas</p>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</div>
+         <!--	Fin de objetivos con imagenes--------------->
+       
+       <!--	inicio de redes sociales--------------->
+       <div class="container-bar">
+        <input type="checkbox" id="btn-social">
+        <label for="btn-social" class="fa fa-play"></label>
+            <div class="icon-social">
+                <a href="https://www.facebook.com/profile.php?id=100093142003433&mibextid=ZbWKwL" class="fa fa-facebook">
+                    <span id="title">Facebook</span>
+                </a>
+                <a href="https://www.instagram.com/mone_ycouch/?igshid=MzNlNGNkZWQ4Mg%3D%3D" class="fa fa-instagram">
+                    <span id="title">Instagram</span>
+                </a>
+                <a href="https://wa.link/5wkawx" class="fa fa-whatsapp">
+                    <span id="title">
+                        WhatsApp
+                    </span>
+                </a>
+                
+            </div>
+        </div>
+
+            <!--	fin de redes sociales--------------->
+
+             <!--inicio de moneytips	--------------->
+             <div class="contenedor">
+                <a href="#">
+                     <figure>
+                        
+                         <div class="capa">
+                             <h3><strong>#MONEY</strong>TIP</h3>
+                             <p>una mascota tambien es un depentiente economico.Analiza los costos que tendraqs en alimento y veterinarios a lo largo de su vida</p>
+                         </div>
+                     </figure>
+                 </a>
+             </div>
+
+
+            <!--fin de moneytips	--------------->
+
+
+             <!--inicio de slider automatico	--------------->
+
+
+             <div style="height: 500px;"></div>
+
+             <div class="slider" style="position: absolute;
+             
+             left: 50%;
+             transform: translate(-50%, -50%);">
+                <ul>
+                    <li>
+                        <img src="imagenes/libro1.png">
+                    </li>
+                    <li>
+                        <img src="imagenes/libro2.png">
+                    </li>
+                    <li>
+                        <img src="imagenes/libro3.png" >
+                    </li>
+                    <li>
+                        <img src="imagenes/investor.png" width="20%">
+                    </li>
+                    
+                </ul>
+                <a href="https://investor.com.mx/" class="btn btn-2">InvestorHouse
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+
+
+            <div id="container">
+                
+ 
+       
+        
+        
+    </div>
+    <div style="height: 200px;"></div>
+
+                <!--fin de slider automatico	--------------->
+    
+<!--	inicio de pie de pagina--------------->
+<footer class="pie-pagina">
+  <div class="grupo-1">
+      <div class="box">
+          <figure>
+              <a href="#">
+                  <img src="imagenes/pie.jpg" alt="Logo de SLee Dw">
+              </a>
+          </figure>
+      </div>
+      <div class="box">
+          <h2>SOBRE NOSOTROS</h2>
+          <p><a href="login_formulario/indets.html">Que te parece la pagina?</a></p>
+          
+      </div>
+      <div class="box">
+          <h2>SIGUENOS</h2>
+          <div class="red-social">
+              <a href="https://www.facebook.com/profile.php?id=100093142003433&mibextid=ZbWKwL" class="fa fa-facebook"></a>
+              <a href="https://www.instagram.com/mone_ycouch/?igshid=MzNlNGNkZWQ4Mg%3D%3D" class="fa fa-instagram"></a>
+              <a href="https://wa.link/5wkawx" class="fa fa-whatsapp"></a>
+              
+          </div>
+      </div>
+  </div>
+  <div class="grupo-2">
+      <small>&copy; 2023 <b>SLee Dw</b> - Todos los Derechos Reservados.</small>
+  </div>
+</footer>
+
+            <!--fin de pie de pagina	--------------->
+
+
+
+             
+
+
+           
+
+</body>
+</html>

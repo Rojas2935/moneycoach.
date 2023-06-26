@@ -1,0 +1,2797 @@
+.columna{
+    border-radius: 0px;
+    -webkit-transition:1s linear;
+    transition: 1s linear;
+    background: #9E6F21;
+    color: #FFDEB4;
+    padding: 70px;
+    width: 25%;
+    margin: 10px;
+    
+}
+.columna:hover{
+    border-radius: 30px;
+    left: 0px;
+    opacity: 1;
+    transition: 1s linear;
+
+}
+.columna1{
+    border-radius: 0px;
+    -webkit-transition:1s linear;
+    transition: 1s linear;
+    background: #9E6F21;
+    color: #FFDEB4;
+    padding: 70px;
+    width: 25%;
+    height: 100px;
+    margin: 10px;
+}
+.columna1:hover{
+    border-radius: 30px;
+}
+.columna2{
+    border-radius: 0px;
+    -webkit-transition:1s linear;
+    transition: 1s linear;
+    background: #9E6F21;
+    color: #FFDEB4;
+    padding: 70px;
+    width: 25%;
+    height: 25px;
+    margin: 10px;
+}
+.columna2:hover{
+    border-radius: 30px;
+}
+.padre{
+    display: flex;
+}
+h1{
+    
+    color: #FFEEB3;
+}
+h2{
+    color: black;
+}
+
+.mjm{
+    color: #FFEEB3;
+    background: #9E6F21;
+    color: #FFDEB4;
+    padding: 20px;
+    width: 25%;
+    margin: 10px;
+}
+.menu{
+    display: block;
+    position: relative;
+    height: 76px;
+    width: 25%;
+    margin: 0;
+    overflow: hidden;
+}
+/*bordes superiores*/
+.menu.servicios{
+    border-top: #FFEEB3 0.3em solid;
+}
+.menu.recursos{
+    border-top: #FFEEB3 0.3em solid;
+}
+.menu.proyectos{
+    border-top: #FFEEB3 0.3em solid;
+}
+.menu.contacto{
+    border-top: #FFEEB3 0.3em solid;
+}
+.menu > span {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+}
+.menu::after, .menu > span > span {
+    display: block;
+    text-align: center;
+    border-radius: 0em;
+    padding: 2em 0 1.5em;
+}
+.menu::after{
+    content: attr(data-title);
+    width: 100%;
+    background: #9E6F21;
+    color: #FFF;
+}
+.menu > span > span  {
+    width: 100%;
+    color: #FFF;
+}
+.menu.servicios > span > span {
+    background: navajowhite;
+}
+.menu.proyectos > span > span {
+    background: navajowhite;
+}
+.menu.recursos > span > span {
+    background: navajowhite;
+}
+.menu.contacto > span > span {
+    background: navajowhite;
+}
+.menu:hover > span {
+    height: 100%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li a{
+    display: inline;
+    float: left;
+    text-decoration: none;
+    font-family: Helvetica;
+}
+@media(max-width:600px){
+    nav{
+        background: navajowhite;
+        flex-direction: column;
+    }
+    .menu.servicios{
+        margin: 10px 0px;
+    }
+    .menu.contacto{
+        display: inline-block;
+    }
+    .menu.proyectos{
+        display: block;
+    }    
+}
+.img{
+    border-radius: 0px;
+    -webkit-transition:1s linear;
+    transition: 1s linear;
+    width: 500px;
+    height: 550px;
+    
+    
+}
+.img:hover{
+    border-radius: 30px;
+    -webkit-box-shadow:10px 10px 14px 2px rgba(0,0,0,0.47);
+    box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+    
+}
+/*fin de bordes superiores*/
+
+
+
+
+/*css de encanbezado*/
+*, 
+*::before,
+*::after
+{
+  box-sizing: border-box;
+}
+
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+main 
+{
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+}
+
+section 
+{
+  transform-style: preserve-3d;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+}
+
+section h1
+{
+  text-align: center;
+  font-size: 4rem;
+  font-family: sans-serif;
+}
+
+.no-parallax 
+{
+  background-color: #5333ed;
+  z-index: 999;
+}
+
+.parallax h1 
+{
+  width: 60%;
+  font-size: 2rem;
+}
+
+.parallax::after 
+{
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  background-size: 100%;
+  z-index: -1;
+}
+
+.bg::after 
+{
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("imagenes/portada.png");
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) 
+{
+  section h1 
+  {
+    font-size: 8rem;
+  }
+  
+  .parallax h1 
+  {
+    font-size: 4rem;
+  }
+}
+/*fin de css de encanbezado*/
+
+
+
+/* cajas de objetivos*/
+
+#obj{
+    
+    height: 70vh;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+section img{
+    width: 500px;
+    margin: 0 50px;
+}
+section .info{
+    width:700px ;
+    margin: 0 50px;
+    text-align: left;
+}
+
+.pagina{
+    position: relative;
+    left: -50px;
+    opacity: 0;
+    width: 350px;
+    height: 200px;
+}
+.efecto-pagina{
+left: 0px;
+opacity: 1;
+transition: 1s linear;
+}
+.general{
+    transform: scale(0.5);
+    opacity: 0;
+    width: 350px;
+    height: 200px;
+}
+.efecto-general{
+    transform: scale(1);
+    opacity: 1;
+    transition: 1s linear;
+}
+.especifico{
+    position: relative;
+    bottom: -80px;
+    opacity: 0;
+    width: 250px;
+    height: 200px;
+}
+.efecto-especifico{
+    bottom: 0;
+    opacity: 1;
+    transition: 1s linear;
+}
+
+/* fin de cajas de objetivos*/
+
+
+
+
+/*css de redes sociales*/
+
+#btn-mas{
+  display: none;
+}
+.container{
+  
+  bottom: 20px;
+  left: 1800px;
+}
+.redes a, .btn-mas label{
+  display: block;
+  text-decoration: none;
+  background: #cc2b2b;
+  color: #fff;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+  transition: all 500ms ease;
+}
+.redes a:hover{
+  background: #fff;
+  color: #cc2b2b;
+}
+.redes a{
+  margin-bottom: -15px;
+  opacity: 0;
+  visibility: hidden;
+}
+#btn-mas:checked~ .redes a{
+  margin-bottom: 10px;
+  opacity: 1;
+  visibility: visible;
+}
+.btn-mas label{
+  cursor: pointer;
+  background: #f44141;
+  font-size: 23px;
+}
+#btn-mas:checked ~ .btn-mas label{
+  transform: rotate(135deg);
+  font-size: 25px;
+}
+
+
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+.container-bar{
+	width: 100%;
+	max-width: 50px;
+	position: fixed;
+	left: 0;
+	top: 25%;
+}
+.container-bar a{
+	display: block;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+	position: relative;
+	transition: all 500ms ease;
+	color: #fff;
+}
+.container-bar a:hover{
+	background: #1c1c1c;
+}
+.container-bar .fa-facebook{
+	background: #3b5998;
+	border-radius: 0px 5px 0px 0px;
+}
+.container-bar .fa-instagram{
+	background: linear-gradient(to left, #833AB4,#C13584,#E1306C,  #FD1D1D,#F56040, #F77737,#FCAF45,#FFDC80 );;
+}
+.container-bar .fa-whatsapp{
+	background: green;
+  border-radius: 0px 0px 5px 0px;
+}
+
+.container-bar #title{
+	position: absolute;
+	background: #1c1c1c;
+	padding: 0px 8px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 3px;
+	font-size: 15px;
+	top:12px; left: 0px;
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+	z-index: -1;
+}
+.container-bar a:hover #title{
+	opacity: 1;
+	visibility: visible;
+	left: 64px;
+}
+.container-bar #title:after{
+	position: absolute;
+	content: '';
+	border-left: 7px solid transparent;
+	border-right: 6px solid #1c1c1c;
+	border-top: 7px solid transparent;
+	border-bottom: 7px solid transparent;
+	right: 100%;
+	top: 8px;
+}
+#btn-social{
+	display: none;
+}
+.fa-play{
+	cursor: pointer;
+	transition: all 0.4s;
+	font-size: 12px;
+	margin-bottom: 5px;
+	display: inline-block;
+	transform: rotate(180deg);
+	color: #49b0e6;
+}
+#btn-social:checked ~ .fa-play{
+	transform: rotate(0deg);
+}
+.icon-social{
+	transition: all 0.4s;
+	transform: translateX(0%);
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+}
+#btn-social:checked ~ .icon-social{
+	transform: translateX(-100%);
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.0);
+}
+
+/*::::: fin de redes sociales*/
+
+/*::::: inicio de Pie de Pagina*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.pie-pagina{
+    width: 100%;
+    background:#FFF9C4 ;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: black;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: black;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: wheat;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+/*:::::fin de Pie de Pagina*/
+
+
+/*inicio de menu*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Montserrat Alternates', sans-serif;
+	}
+	body{
+		background: url(https://www.xtrafondos.com/wallpapers/montanas-con-nieve-en-el-bosque-3934.jpg);
+		background-size: 100vw 100vh;
+		background-repeat: no-repeat;
+	}
+	.capa{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: rgba(0,0,0,0.6);
+		z-index: -1;
+		top: 0;left: 0;
+	}
+	/*Estilos para el encabezado*/
+	.header{
+		width: 100%;
+		height: 100px;
+		position: fixed;
+		top: 0;left: 0;
+	}
+	.container{
+		width: 90%;
+		max-width: 1200px;
+		margin: auto;
+	}
+	.container .btn-menu, .logo{
+		float: left;
+		line-height:100px;
+	}
+	.container .btn-menu label{
+		color: #fff;
+		font-size: 25px;
+		cursor: pointer;
+	}
+	.logo h1{
+		color: #fff;
+		font-weight: 400;
+		font-size: 22px;
+		margin-left: 10px;
+	}
+	.container .menu{
+		float: right;
+		line-height: 100px;
+	}
+	.container .menu a{
+		display: inline-block;
+		padding: 15px;
+		line-height: normal;
+		text-decoration: none;
+		color: #fff;
+		transition: all 0.3s ease;
+		border-bottom: 2px solid transparent;
+		font-size: 15px;
+		margin-right: 5px;
+	}
+	.container .menu a:hover{
+		border-bottom: 2px solid #c7c7c7;
+		padding-bottom: 5px;
+	}
+	/*Fin de Estilos para el encabezado*/
+
+
+
+    /*inicio de moneytips*/
+
+    .contenedor{
+    
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .contenedor figure{
+      
+       position:relative;
+        height: 250px;
+        cursor: pointer;
+        width: 350px;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+    }
+    .contenedor figure img{
+      
+        width: 100%;
+        height: 100%;
+        transition: all 400ms ease-out;
+        will-change: transform;
+    }
+    .contenedor figure .capa{
+      
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(3, 140, 78, 0.7);
+        transition: all 400ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+       text-align: center;
+    }
+    .contenedor figure:hover > .capa {
+        opacity: 1;
+        visibility: visible;
+    }
+    .contenedor figure:hover > .capa h3{
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    .contenedor figure:hover > img{
+        transform: scale(1.3);
+    }
+    .contenedor figure .capa h3{
+        color: #fff;
+        font-weight: 400;
+        margin-bottom: 120px;
+        transition: all 400ms ease-out;
+         margin-top: 30px;
+    }
+    .contenedor figure .capa p{
+        color: #fff;
+        font-size: 15px;
+        line-height: 1.5;
+        width: 100%;
+        max-width: 250px;
+        margin: auto;
+    }
+
+
+
+    /*Fin de moneytips*/
+
+
+
+     /*inicio de slider automatico*/
+     *{
+        text-align: center;
+       
+     }
+     .slider{
+        width: 80%;
+        height: 600px;
+        overflow: hidden;
+        
+      }
+      .slider ul{
+          display: flex;
+          animation: cambio 20s infinite alternate linear;
+          width: 400%;
+      }
+      .slider li{
+          width: 100%;
+          list-style: none;
+      }
+      .slider img{
+          width: 50%;
+          height: 50%;
+      }
+      @keyframes cambio{
+      
+          0%{margin-left: 0;}
+          20%{margin-left: 0;}
+          
+          25%{margin-left: -100%;}
+          45%{margin-left: -100%;}
+          
+          50%{margin-left: -200%;}
+          70%{margin-left: -200%;}
+          
+          75%{margin-left: -300%;}
+          100%{margin-left: -300%;}
+      }
+      @media only screen and (min-width:320px) and (max-width:768px){
+      .slider, .slider ul, .slider img{
+          height: 100vh;
+      }
+    }
+
+
+      /*Fin de slider automatico*/
+
+      /*inicio boton investor*/
+      @import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Roboto:wght@100&@700&display=swap');
+
+      *{
+          margin: 0;
+          padding: 0;
+          font-family: 'Roboto', sans-serif;
+          font-weight: bold;
+          text-transform: uppercase;
+         
+      }
+      
+      :root{
+          --color: #512DA8;
+      }
+      
+      .contenedor{
+          display: flex;
+          height: 100vh;
+          gap: 25px;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          align-items: center;
+      }
+      
+      .btn{
+          position: relative;
+          padding: 20px 50px;
+          text-decoration: none;
+          color: #689F38;
+          letter-spacing: 10px;
+          text-indent: 10px;
+          z-index: 2;
+    
+      }
+      
+     
+      
+      /*-----------boton 2----------*/
+      
+      .btn-2{
+          border: 3px solid;
+      }
+      
+      .btn-2:hover{
+          background-color: #000 ;
+          box-shadow: 0 0 20px var(--color);
+          border-color: var(--color);
+      }
+      
+      .btn-2 span:nth-child(n){
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          border: 3px solid;
+          transition: all 0.6s ease;
+      }
+      
+      .btn-2 span:nth-child(1){
+          right: 10%;
+          top: -10px;
+          background-color: #512DA8;
+      }
+      
+      .btn-2 span:nth-child(2){
+          left: 10%;
+          bottom: -10px;
+      }
+      
+      .btn-2:hover span:nth-child(1){
+          right: 80%;
+          transform: rotate(90deg);
+          color: var(--color);
+          background-color: var(--color);
+          
+      }
+      
+      .btn-2:hover span:nth-child(2){
+          left: 80%;
+          transform: rotate(90deg);
+          color: var(--color);
+      }
+      
+      
+      /*Fin de boton investor*/
+
+
+      /*inicio indice de temas*/
+
+      .footer{
+        padding: 100px 0;
+        background-color: #A9DFBF;
+        
+      }
+      
+      .footer-content{
+        display: flex;
+        justify-content: space-between;
+      }
+      .footer2{
+        padding: 100px 0;
+        background-color: #FAD7A0 ;
+      }
+      
+      .footer2-content{
+        display: flex;
+        justify-content: space-between;
+      }
+      .footer3{
+        padding: 100px 0;
+        background-color: #AED6F1;
+      }
+      
+      .footer3-content{
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      .link h3{
+        font-size: 18px;
+        color: #F9FAFC;
+        margin-bottom: 15px;
+      }
+
+      .link2 h3{
+        font-size: 18px;
+        color: #F9FAFC;
+        margin-bottom: 15px;
+      }
+
+      .link3 h3{
+        font-size: 18px;
+        color: #F9FAFC;
+        margin-bottom: 15px;
+      }
+      
+      .link a{
+        font-size: 16px;
+        color: #17A589;
+        display: block;
+        margin-bottom: 15px;
+      }
+
+      .link2 a{
+        font-size: 16px;
+        color: #D68910;
+        display: block;
+        margin-bottom: 15px;
+      }
+
+      .link3 a{
+        font-size: 16px;
+        color: #148F77;
+        display: block;
+        margin-bottom: 15px;
+      }
+
+      /*Fin de indice de temas*/
+
+
+
+      /*inicio de glosario*/
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+    }
+
+      body {
+       
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: linear-gradient(to left, #D2B4DE, #B2EBF2 );
+    }
+
+    .body2 {
+       
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: linear-gradient(to left, #ABEBC6, #F0B27A );
+  }
+
+    .body1 {
+       
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: linear-gradient(to left, #F5B7B1,#D2B4DE,#AED6F1,  #A3E4D7,#ABEBC6, #F9E79F,#F5CBA7,#D7DBDD, #AEB6BF );
+    }
+    
+    button:focus {
+      outline: 0;
+    }
+    
+    img,
+    embed,
+    svg,
+    audio,
+    canvas,
+    iframe,
+    video {
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
+    }
+    
+    hr {
+      height: 0;
+      border: 0;
+      border-bottom: 1px solid #dfdfdf;
+      margin: 0;
+    }
+    
+    
+    
+    h1 {
+      font-size: 4rem;
+      margin-top: 0;
+      margin-bottom: 80px;
+    }
+    
+    h1 span {
+      color: #17B6D2;
+    }
+    
+    p {
+      margin: 0;
+    }
+    
+    .cards-grid {
+      display: flex;
+      grid-gap: 80px;
+      padding-bottom: 60px;
+    }
+    
+    /* FLIP CARD */
+    .flip-card {
+      width: 370px;
+      height: 400px;
+      perspective: 2000px;
+    }
+    .flip-card-inner {
+      position: relative;
+      width: 99%;
+      height: 100%;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      border-radius: 28px;
+      transition: all 550ms cubic-bezier(0.1, 0.22, 0.8, 1.13);
+      transform-style: preserve-3d;
+    }
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 28px;
+      backface-visibility: hidden;
+    }
+    .flip-card-front {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .flip-card-back {
+      font-size: 1.25rem;
+      text-align: center;
+      display: grid;
+      place-items: center;
+      padding: 32px;
+     
+      transform: rotateY(180deg);
+    }
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(-180deg);
+    }
+    
+    
+      /*Fin de glosario*/
+
+
+
+       /*Inicio de contenido1*/
+
+.btn3{
+  padding: 2.5rem 49.9%;
+  background:#D7BDE2 ;
+  border: 0.1rem solid #0a1a2a;
+  cursor: pointer;
+  position: relative;
+  border-radius: .3rem;
+  overflow: hidden;
+}
+.btn3::before{
+  content: 'hola como estas';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.6rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  font-weight: 700;
+  text-shadow: .1rem .1rem .1rem #333;
+  transition: .2s ease;
+}
+
+.btn3::after{
+  content: 'te ves bien eee';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  font-size: 1.6rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  font-weight: 700;
+  text-shadow: .1rem .1rem .1rem #333;
+  transition: .2s ease;
+  opacity: 0;
+}
+
+.btn3:hover::before{
+transform: translate(-50%, -50%) scale(3);
+opacity: 0;
+}
+.btn3:hover::after{
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  }
+
+
+
+
+
+
+        /*Fin de contenido1*/
+
+
+
+        /*Inicio de contenido2*/
+
+        * {
+          margin:0;
+          padding:0;
+          color:#fff;
+          font-family:Arial;
+        }
+        
+        div#imagen {
+          width:700px;
+          height: 400px;
+          background-size: cover;/*sólo para ejemplo*/
+          background-image:url('imagenes/img39.jpg');
+          margin: 30px auto;
+          border-radius: 20px;
+        }
+
+        
+        
+        div#info {
+          text-align: center;
+          position:absolute;
+          overflow:hidden;
+          width: 700px;
+          height: 400px;
+          background-color: rgba(31, 31, 31, 0.9);
+          opacity:0;
+          transition: opacity 0.3s;
+          border-radius: 20px;
+        }
+        
+        div#imagen:hover div#info {
+          opacity:1;
+        }
+        
+        div#imagen1:hover div#info {
+          opacity:1;
+        }
+        div#imagen2:hover div#info {
+          opacity:1;
+        }
+        p#headline {
+          position: absolute;
+          font-size: 1.5rem;
+          margin-left: -75px;
+          margin-top: 15px;
+          transition: margin-left 0.3s;
+        }
+        
+        div#imagen:hover p#headline {
+          margin-left: 115px;
+        }
+
+        div#imagen1:hover p#headline {
+          margin-left: 115px;
+        }
+
+        div#imagen2:hover p#headline {
+          margin-left: 115px;
+        }
+        
+        p#descripcion {
+          font-size: 1.7rem;
+          text-align: center;
+          margin-top: 200px;
+          transition: margin-top 0.4s;
+        }
+        
+        div#imagen:hover p#descripcion {
+          margin-top: 75px;
+        }
+
+        div#imagen1:hover p#descripcion {
+          margin-top: 75px;
+        }
+
+        div#imagen2:hover p#descripcion {
+          margin-top: 75px;
+        }
+        
+        
+        /*Fin de contenido2*/
+
+
+
+        /*Inicio de contenido3 rueda*/
+
+
+        * {
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+        
+        body { font-family: sans-serif; }
+        
+        .gallery {
+          background: #EEE;
+        }
+        
+        .gallery-cell {
+          width: 66%;
+          height: 200px;
+          margin-right: 10px;
+          background: #8C8;
+          counter-increment: gallery-cell;
+        }
+        
+        /* cell number */
+        .gallery-cell:before {
+          display: block;
+          text-align: center;
+          content: counter(gallery-cell);
+          line-height: 200px;
+          font-size: 80px;
+          color: white;
+        }
+
+        .conteneur {
+          width:431px;
+          margin:auto;
+          position:relative;
+        }
+        
+        .h8 {
+          font-family: 'Roboto', sans-serif;
+          font-weight:400;
+          font-size:24px;
+          text-align:center;
+          color:#000;
+          margin:40px 0 120px 0;
+        }
+        
+        .circle {
+          background:transparent;
+          margin:auto;
+          width:300px;
+          height:300px;
+          border:8px solid #000;
+          border-radius:50%;
+          position:relative;
+          -webkit-animation:animation 12s infinite linear;
+          animation:animation 12s infinite linear;/*Safari and Chrome*/
+        }
+        
+        .circle:hover {
+          animation-play-state:paused;
+          -webkit-animation-play-state:paused; /* Safari and Chrome */
+        }
+        
+        .point_general {
+          width:12px;
+          height:12px;
+          position:absolute;
+          border-radius:50%;
+          background:#000;
+          border:6px solid #fff;
+        }
+        
+        .point_general:after {
+          width:0px;
+          height:0px;
+          position:absolute;
+          top:0px;
+          left:0px;
+          content:'';
+          background:#1abc9c;
+          opacity:0;
+          border-radius:50%;
+          -webkit-transition:all .4s ease;
+          transition:all .4s ease;
+        }
+        
+        .point_general:hover:after {
+         opacity:0.8;
+          width:200px;
+          height:200px;
+          top:-94px;
+          left:-94px;
+        }
+        
+        .texte {
+          opacity:0;
+          position:absolute;
+          text-align:center;
+          top:-50px;
+          left:-50px;
+          width:110px;
+          height:110px;
+          overflow:hidden;
+          color:#ecf0f1;
+          font-family: 'Roboto', sans-serif;
+          z-index:10;
+          -webkit-transition:opacity .2s 0s ease;
+          transition:opacity .2s 0s ease;
+          -webkit-animation:animation2 12s infinite linear;
+          animation:animation2 12s infinite linear;/*Safari and Chrome*/
+        }
+        
+        .point_general:hover .texte {
+          opacity:1;
+          -webkit-transition:opacity .4s .4s ease;
+          transition:opacity .4s .4s ease;
+        }
+        
+        .circle:hover .texte {
+          animation-play-state:paused;
+          -webkit-animation-play-state:paused; /* Safari and Chrome */
+        }
+        
+        .point1 {
+          top:30px;
+          left:30px;
+        }
+        
+        /*.point5:after {
+          content:'Plerosque et est copia';
+          text-align:center;
+          padding:50px 0 0 0;
+        }*/
+        
+        .point2 {
+          top:-16px;
+          left:138px;
+        }
+        
+        .point3 {
+          top:30px;
+          right:30px;
+        }
+        
+        .point4 {
+          top:138px;
+          right:-16px;
+        }
+        
+        .point5 {
+          bottom:30px;
+          right:30px;
+        }
+        
+        .point6 {
+          bottom:-16px;
+          left:138px;
+        }
+        
+        .point7 {
+          bottom:30px;
+          left:30px;
+        }
+        
+        .point8 {
+          top:138px;
+          left:-16px;
+        }
+        
+        @keyframes animation
+        {
+        0% {transform:rotate(0deg);}
+        100% {transform:rotate(360deg);}
+        }
+        
+        @-webkit-keyframes animation /*Safari and Chrome*/
+        {
+        0% {-webkit-transform:rotate(0deg);}
+        100% {-webkit-transform:rotate(360deg);}  
+        }
+        
+        @keyframes animation2
+        {
+        0% {transform:rotate(0deg);}
+        100% {transform:rotate(-360deg);}
+        }
+        
+        @-webkit-keyframes animation2 /*Safari and Chrome*/
+        {
+        0% {-webkit-transform:rotate(0deg);}
+        100% {-webkit-transform:rotate(-360deg);}  
+        }
+        /*Fin de contenido3 rueda*/
+
+
+        /*Inicio de contenido4 animacion*/
+        
+      
+        
+       
+        /*Fin de contenido4 animacion*/
+
+
+
+        .btn4{
+          padding: 2.5rem 49.9%;
+          background:#D7BDE2 ;
+          border: 0.1rem solid #0a1a2a;
+          cursor: pointer;
+          position: relative;
+          border-radius: .3rem;
+          overflow: hidden;
+        }
+        .btn4::before{
+          content:'¿Necesito establecer';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 1.6rem;
+          color: #fff;
+          text-transform: uppercase;
+          letter-spacing: .3rem;
+          font-weight: 700;
+          text-shadow: .1rem .1rem .1rem #333;
+          transition: .2s ease;
+        }
+        
+        .btn4::after{
+          content: 'Metas financieras?';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) scale(0);
+          font-size: 1.6rem;
+          color: #fff;
+          text-transform: uppercase;
+          letter-spacing: .3rem;
+          font-weight: 700;
+          text-shadow: .1rem .1rem .1rem #333;
+          transition: .2s ease;
+          opacity: 0;
+        }
+        
+        .btn4:hover::before{
+        transform: translate(-50%, -50%) scale(3);
+        opacity: 0;
+        }
+        .btn4:hover::after{
+          transform: translate(-50%, -50%) scale(1);
+          opacity: 1;
+          }
+
+
+          .btn5{
+            padding: 2.5rem 49.9%;
+            background:#D7BDE2 ;
+            border: 0.1rem solid #0a1a2a;
+            cursor: pointer;
+            position: relative;
+            border-radius: .3rem;
+            overflow: hidden;
+          }
+          .btn5::before{
+            content:'¿Como conertir mis';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.6rem;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: .3rem;
+            font-weight: 700;
+            text-shadow: .1rem .1rem .1rem #333;
+            transition: .2s ease;
+          }
+          
+          .btn5::after{
+            content: 'Ingresos en activos?';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            font-size: 1.6rem;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: .3rem;
+            font-weight: 700;
+            text-shadow: .1rem .1rem .1rem #333;
+            transition: .2s ease;
+            opacity: 0;
+          }
+          
+          .btn5:hover::before{
+          transform: translate(-50%, -50%) scale(3);
+          opacity: 0;
+          }
+          .btn5:hover::after{
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 1;
+            }
+
+
+
+
+            .btn6{
+              padding: 2.5rem 49.9%;
+              background:#D7BDE2 ;
+              border: 0.1rem solid #0a1a2a;
+              cursor: pointer;
+              position: relative;
+              border-radius: .3rem;
+              overflow: hidden;
+            }
+            .btn6::before{
+              content:'¿Que son los ingresos';
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              font-size: 1.6rem;
+              color: #fff;
+              text-transform: uppercase;
+              letter-spacing: .3rem;
+              font-weight: 700;
+              text-shadow: .1rem .1rem .1rem #333;
+              transition: .2s ease;
+            }
+            
+            .btn6::after{
+              content: 'Activos y pasivos?';
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%) scale(0);
+              font-size: 1.6rem;
+              color: #fff;
+              text-transform: uppercase;
+              letter-spacing: .3rem;
+              font-weight: 700;
+              text-shadow: .1rem .1rem .1rem #333;
+              transition: .2s ease;
+              opacity: 0;
+            }
+            
+            .btn6:hover::before{
+            transform: translate(-50%, -50%) scale(3);
+            opacity: 0;
+            }
+            .btn6:hover::after{
+              transform: translate(-50%, -50%) scale(1);
+              opacity: 1;
+              }
+
+
+
+
+              .btn7{
+                padding: 2.5rem 49.9%;
+                background:#D7BDE2 ;
+                border: 0.1rem solid #0a1a2a;
+                cursor: pointer;
+                position: relative;
+                border-radius: .3rem;
+                overflow: hidden;
+              }
+              .btn7::before{
+                content:'¿Cual es el camino hacia';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 1.6rem;
+                color: #fff;
+                text-transform: uppercase;
+                letter-spacing: .3rem;
+                font-weight: 700;
+                text-shadow: .1rem .1rem .1rem #333;
+                transition: .2s ease;
+              }
+              
+              .btn7::after{
+                content: 'La libertad financiera?';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) scale(0);
+                font-size: 1.6rem;
+                color: #fff;
+                text-transform: uppercase;
+                letter-spacing: .3rem;
+                font-weight: 700;
+                text-shadow: .1rem .1rem .1rem #333;
+                transition: .2s ease;
+                opacity: 0;
+              }
+              
+              .btn7:hover::before{
+              transform: translate(-50%, -50%) scale(3);
+              opacity: 0;
+              }
+              .btn7:hover::after{
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 1;
+                }
+        
+
+                .btn8{
+                  padding: 2.5rem 49.9%;
+                  background:#D7BDE2 ;
+                  border: 0.1rem solid #0a1a2a;
+                  cursor: pointer;
+                  position: relative;
+                  border-radius: .3rem;
+                  overflow: hidden;
+                }
+                .btn8::before{
+                  content:'¿Como llevar un';
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  font-size: 1.6rem;
+                  color: #fff;
+                  text-transform: uppercase;
+                  letter-spacing: .3rem;
+                  font-weight: 700;
+                  text-shadow: .1rem .1rem .1rem #333;
+                  transition: .2s ease;
+                }
+                
+                .btn8::after{
+                  content: 'Control de gastos?';
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%) scale(0);
+                  font-size: 1.6rem;
+                  color: #fff;
+                  text-transform: uppercase;
+                  letter-spacing: .3rem;
+                  font-weight: 700;
+                  text-shadow: .1rem .1rem .1rem #333;
+                  transition: .2s ease;
+                  opacity: 0;
+                }
+                
+                .btn8:hover::before{
+                transform: translate(-50%, -50%) scale(3);
+                opacity: 0;
+                }
+                .btn8:hover::after{
+                  transform: translate(-50%, -50%) scale(1);
+                  opacity: 1;
+                  }
+
+
+
+
+                  .btn9{
+                    padding: 2.5rem 49.9%;
+                    background:#D7BDE2 ;
+                    border: 0.1rem solid #0a1a2a;
+                    cursor: pointer;
+                    position: relative;
+                    border-radius: .3rem;
+                    overflow: hidden;
+                  }
+                  .btn9::before{
+                    content:'¿Como hacer mi';
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 1.6rem;
+                    color: #fff;
+                    text-transform: uppercase;
+                    letter-spacing: .3rem;
+                    font-weight: 700;
+                    text-shadow: .1rem .1rem .1rem #333;
+                    transition: .2s ease;
+                  }
+                  
+                  .btn9::after{
+                    content: 'Presupuesto mensual?';
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) scale(0);
+                    font-size: 1.6rem;
+                    color: #fff;
+                    text-transform: uppercase;
+                    letter-spacing: .3rem;
+                    font-weight: 700;
+                    text-shadow: .1rem .1rem .1rem #333;
+                    transition: .2s ease;
+                    opacity: 0;
+                  }
+                  
+                  .btn9:hover::before{
+                  transform: translate(-50%, -50%) scale(3);
+                  opacity: 0;
+                  }
+                  .btn9:hover::after{
+                    transform: translate(-50%, -50%) scale(1);
+                    opacity: 1;
+                    }
+
+
+
+                    
+                  .btn10{
+                    padding: 2.5rem 49.9%;
+                    background:#D7BDE2 ;
+                    border: 0.1rem solid #0a1a2a;
+                    cursor: pointer;
+                    position: relative;
+                    border-radius: .3rem;
+                    overflow: hidden;
+                  }
+                  .btn10::before{
+                    content:'¿Como organizo mis';
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 1.6rem;
+                    color: #fff;
+                    text-transform: uppercase;
+                    letter-spacing: .3rem;
+                    font-weight: 700;
+                    text-shadow: .1rem .1rem .1rem #333;
+                    transition: .2s ease;
+                  }
+                  
+                  .btn10::after{
+                    content: 'Pagos mensuales?';
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) scale(0);
+                    font-size: 1.6rem;
+                    color: #fff;
+                    text-transform: uppercase;
+                    letter-spacing: .3rem;
+                    font-weight: 700;
+                    text-shadow: .1rem .1rem .1rem #333;
+                    transition: .2s ease;
+                    opacity: 0;
+                  }
+                  
+                  .btn10:hover::before{
+                  transform: translate(-50%, -50%) scale(3);
+                  opacity: 0;
+                  }
+                  .btn10:hover::after{
+                    transform: translate(-50%, -50%) scale(1);
+                    opacity: 1;
+                    }
+
+
+                    .btn11{
+                      padding: 2.5rem 49.9%;
+                      background:#D7BDE2 ;
+                      border: 0.1rem solid #0a1a2a;
+                      cursor: pointer;
+                      position: relative;
+                      border-radius: .3rem;
+                      overflow: hidden;
+                    }
+                    .btn11::before{
+                      content:'¿Que son los';
+                      position: absolute;
+                      top: 50%;
+                      left: 50%;
+                      transform: translate(-50%, -50%);
+                      font-size: 1.6rem;
+                      color: #fff;
+                      text-transform: uppercase;
+                      letter-spacing: .3rem;
+                      font-weight: 700;
+                      text-shadow: .1rem .1rem .1rem #333;
+                      transition: .2s ease;
+                    }
+                    
+                    .btn11::after{
+                      content: 'Meses sin intereses?';
+                      position: absolute;
+                      top: 50%;
+                      left: 50%;
+                      transform: translate(-50%, -50%) scale(0);
+                      font-size: 1.6rem;
+                      color: #fff;
+                      text-transform: uppercase;
+                      letter-spacing: .3rem;
+                      font-weight: 700;
+                      text-shadow: .1rem .1rem .1rem #333;
+                      transition: .2s ease;
+                      opacity: 0;
+                    }
+                    
+                    .btn11:hover::before{
+                    transform: translate(-50%, -50%) scale(3);
+                    opacity: 0;
+                    }
+                    .btn11:hover::after{
+                      transform: translate(-50%, -50%) scale(1);
+                      opacity: 1;
+                      }
+
+
+
+
+
+                      .btn12{
+                        padding: 2.5rem 49.9%;
+                        background:#D7BDE2 ;
+                        border: 0.1rem solid #0a1a2a;
+                        cursor: pointer;
+                        position: relative;
+                        border-radius: .3rem;
+                        overflow: hidden;
+                      }
+                      .btn12::before{
+                        content:'¿Que son las';
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        font-size: 1.6rem;
+                        color: #fff;
+                        text-transform: uppercase;
+                        letter-spacing: .3rem;
+                        font-weight: 700;
+                        text-shadow: .1rem .1rem .1rem #333;
+                        transition: .2s ease;
+                      }
+                      
+                      .btn12::after{
+                        content: 'Deudas?';
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%) scale(0);
+                        font-size: 1.6rem;
+                        color: #fff;
+                        text-transform: uppercase;
+                        letter-spacing: .3rem;
+                        font-weight: 700;
+                        text-shadow: .1rem .1rem .1rem #333;
+                        transition: .2s ease;
+                        opacity: 0;
+                      }
+                      
+                      .btn12:hover::before{
+                      transform: translate(-50%, -50%) scale(3);
+                      opacity: 0;
+                      }
+                      .btn12:hover::after{
+                        transform: translate(-50%, -50%) scale(1);
+                        opacity: 1;
+                        }
+
+
+
+                        .btn13{
+                          padding: 2.5rem 49.9%;
+                          background:#D7BDE2 ;
+                          border: 0.1rem solid #0a1a2a;
+                          cursor: pointer;
+                          position: relative;
+                          border-radius: .3rem;
+                          overflow: hidden;
+                        }
+                        .btn13::before{
+                          content:'Consejos para';
+                          position: absolute;
+                          top: 50%;
+                          left: 50%;
+                          transform: translate(-50%, -50%);
+                          font-size: 1.6rem;
+                          color: #fff;
+                          text-transform: uppercase;
+                          letter-spacing: .3rem;
+                          font-weight: 700;
+                          text-shadow: .1rem .1rem .1rem #333;
+                          transition: .2s ease;
+                        }
+                        
+                        .btn13::after{
+                          content: 'Evitar o salir de deudas';
+                          position: absolute;
+                          top: 50%;
+                          left: 50%;
+                          transform: translate(-50%, -50%) scale(0);
+                          font-size: 1.6rem;
+                          color: #fff;
+                          text-transform: uppercase;
+                          letter-spacing: .3rem;
+                          font-weight: 700;
+                          text-shadow: .1rem .1rem .1rem #333;
+                          transition: .2s ease;
+                          opacity: 0;
+                        }
+                        
+                        .btn13:hover::before{
+                        transform: translate(-50%, -50%) scale(3);
+                        opacity: 0;
+                        }
+                        .btn13:hover::after{
+                          transform: translate(-50%, -50%) scale(1);
+                          opacity: 1;
+                          }
+
+
+
+                          .btn14{
+                            padding: 2.5rem 49.9%;
+                            background:#D7BDE2 ;
+                            border: 0.1rem solid #0a1a2a;
+                            cursor: pointer;
+                            position: relative;
+                            border-radius: .3rem;
+                            overflow: hidden;
+                          }
+                          .btn14::before{
+                            content:'¿Como funcionan las';
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            font-size: 1.6rem;
+                            color: #fff;
+                            text-transform: uppercase;
+                            letter-spacing: .3rem;
+                            font-weight: 700;
+                            text-shadow: .1rem .1rem .1rem #333;
+                            transition: .2s ease;
+                          }
+                          
+                          .btn14::after{
+                            content: 'Tarjetas de credito?';
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%) scale(0);
+                            font-size: 1.6rem;
+                            color: #fff;
+                            text-transform: uppercase;
+                            letter-spacing: .3rem;
+                            font-weight: 700;
+                            text-shadow: .1rem .1rem .1rem #333;
+                            transition: .2s ease;
+                            opacity: 0;
+                          }
+                          
+                          .btn14:hover::before{
+                          transform: translate(-50%, -50%) scale(3);
+                          opacity: 0;
+                          }
+                          .btn14:hover::after{
+                            transform: translate(-50%, -50%) scale(1);
+                            opacity: 1;
+                            }
+
+
+                            .btn15{
+                              padding: 2.5rem 49.9%;
+                              background:#D7BDE2 ;
+                              border: 0.1rem solid #0a1a2a;
+                              cursor: pointer;
+                              position: relative;
+                              border-radius: .3rem;
+                              overflow: hidden;
+                            }
+                            .btn15::before{
+                              content:'¿Como escoger una';
+                              position: absolute;
+                              top: 50%;
+                              left: 50%;
+                              transform: translate(-50%, -50%);
+                              font-size: 1.6rem;
+                              color: #fff;
+                              text-transform: uppercase;
+                              letter-spacing: .3rem;
+                              font-weight: 700;
+                              text-shadow: .1rem .1rem .1rem #333;
+                              transition: .2s ease;
+                            }
+                            
+                            .btn15::after{
+                              content: 'Cuenta bancaria?';
+                              position: absolute;
+                              top: 50%;
+                              left: 50%;
+                              transform: translate(-50%, -50%) scale(0);
+                              font-size: 1.6rem;
+                              color: #fff;
+                              text-transform: uppercase;
+                              letter-spacing: .3rem;
+                              font-weight: 700;
+                              text-shadow: .1rem .1rem .1rem #333;
+                              transition: .2s ease;
+                              opacity: 0;
+                            }
+                            
+                            .btn15:hover::before{
+                            transform: translate(-50%, -50%) scale(3);
+                            opacity: 0;
+                            }
+                            .btn15:hover::after{
+                              transform: translate(-50%, -50%) scale(1);
+                              opacity: 1;
+                              }
+
+
+                              .btn16{
+                                padding: 2.5rem 49.9%;
+                                background:#D7BDE2 ;
+                                border: 0.1rem solid #0a1a2a;
+                                cursor: pointer;
+                                position: relative;
+                                border-radius: .3rem;
+                                overflow: hidden;
+                              }
+                              .btn16::before{
+                                content:'¿Como invertir';
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                font-size: 1.6rem;
+                                color: #fff;
+                                text-transform: uppercase;
+                                letter-spacing: .3rem;
+                                font-weight: 700;
+                                text-shadow: .1rem .1rem .1rem #333;
+                                transition: .2s ease;
+                              }
+                              
+                              .btn16::after{
+                                content: 'En la bolsa?';
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%) scale(0);
+                                font-size: 1.6rem;
+                                color: #fff;
+                                text-transform: uppercase;
+                                letter-spacing: .3rem;
+                                font-weight: 700;
+                                text-shadow: .1rem .1rem .1rem #333;
+                                transition: .2s ease;
+                                opacity: 0;
+                              }
+                              
+                              .btn16:hover::before{
+                              transform: translate(-50%, -50%) scale(3);
+                              opacity: 0;
+                              }
+                              .btn16:hover::after{
+                                transform: translate(-50%, -50%) scale(1);
+                                opacity: 1;
+                                }
+
+
+
+                                .btn17{
+                                  padding: 2.5rem 49.9%;
+                                  background:#D7BDE2 ;
+                                  border: 0.1rem solid #0a1a2a;
+                                  cursor: pointer;
+                                  position: relative;
+                                  border-radius: .3rem;
+                                  overflow: hidden;
+                                }
+                                .btn17::before{
+                                  content:'¿Como es un fondo';
+                                  position: absolute;
+                                  top: 50%;
+                                  left: 50%;
+                                  transform: translate(-50%, -50%);
+                                  font-size: 1.6rem;
+                                  color: #fff;
+                                  text-transform: uppercase;
+                                  letter-spacing: .3rem;
+                                  font-weight: 700;
+                                  text-shadow: .1rem .1rem .1rem #333;
+                                  transition: .2s ease;
+                                }
+                                
+                                .btn17::after{
+                                  content: 'De emergencias?';
+                                  position: absolute;
+                                  top: 50%;
+                                  left: 50%;
+                                  transform: translate(-50%, -50%) scale(0);
+                                  font-size: 1.6rem;
+                                  color: #fff;
+                                  text-transform: uppercase;
+                                  letter-spacing: .3rem;
+                                  font-weight: 700;
+                                  text-shadow: .1rem .1rem .1rem #333;
+                                  transition: .2s ease;
+                                  opacity: 0;
+                                }
+                                
+                                .btn17:hover::before{
+                                transform: translate(-50%, -50%) scale(3);
+                                opacity: 0;
+                                }
+                                .btn17:hover::after{
+                                  transform: translate(-50%, -50%) scale(1);
+                                  opacity: 1;
+                                  }
+      
+    
+
+                                  .btn18{
+                                    padding: 2.5rem 49.9%;
+                                    background:#D7BDE2 ;
+                                    border: 0.1rem solid #0a1a2a;
+                                    cursor: pointer;
+                                    position: relative;
+                                    border-radius: .3rem;
+                                    overflow: hidden;
+                                  }
+                                  .btn18::before{
+                                    content:'¿Como hacer un';
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    font-size: 1.6rem;
+                                    color: #fff;
+                                    text-transform: uppercase;
+                                    letter-spacing: .3rem;
+                                    font-weight: 700;
+                                    text-shadow: .1rem .1rem .1rem #333;
+                                    transition: .2s ease;
+                                  }
+                                  
+                                  .btn18::after{
+                                    content: 'plan de educacion?';
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%) scale(0);
+                                    font-size: 1.6rem;
+                                    color: #fff;
+                                    text-transform: uppercase;
+                                    letter-spacing: .3rem;
+                                    font-weight: 700;
+                                    text-shadow: .1rem .1rem .1rem #333;
+                                    transition: .2s ease;
+                                    opacity: 0;
+                                  }
+                                  
+                                  .btn18:hover::before{
+                                  transform: translate(-50%, -50%) scale(3);
+                                  opacity: 0;
+                                  }
+                                  .btn18:hover::after{
+                                    transform: translate(-50%, -50%) scale(1);
+                                    opacity: 1;
+                                    }
+
+
+
+                                    .btn19{
+                                      padding: 2.5rem 49.9%;
+                                      background:#D7BDE2 ;
+                                      border: 0.1rem solid #0a1a2a;
+                                      cursor: pointer;
+                                      position: relative;
+                                      border-radius: .3rem;
+                                      overflow: hidden;
+                                    }
+                                    .btn19::before{
+                                      content:'¿Como funciona el';
+                                      position: absolute;
+                                      top: 50%;
+                                      left: 50%;
+                                      transform: translate(-50%, -50%);
+                                      font-size: 1.6rem;
+                                      color: #fff;
+                                      text-transform: uppercase;
+                                      letter-spacing: .3rem;
+                                      font-weight: 700;
+                                      text-shadow: .1rem .1rem .1rem #333;
+                                      transition: .2s ease;
+                                    }
+                                    
+                                    .btn19::after{
+                                      content: 'Credito infonavit?';
+                                      position: absolute;
+                                      top: 50%;
+                                      left: 50%;
+                                      transform: translate(-50%, -50%) scale(0);
+                                      font-size: 1.6rem;
+                                      color: #fff;
+                                      text-transform: uppercase;
+                                      letter-spacing: .3rem;
+                                      font-weight: 700;
+                                      text-shadow: .1rem .1rem .1rem #333;
+                                      transition: .2s ease;
+                                      opacity: 0;
+                                    }
+                                    
+                                    .btn19:hover::before{
+                                    transform: translate(-50%, -50%) scale(3);
+                                    opacity: 0;
+                                    }
+                                    .btn19:hover::after{
+                                      transform: translate(-50%, -50%) scale(1);
+                                      opacity: 1;
+                                      }
+  
+
+                                      .btn20{
+                                        padding: 2.5rem 49.9%;
+                                        background:#D7BDE2 ;
+                                        border: 0.1rem solid #0a1a2a;
+                                        cursor: pointer;
+                                        position: relative;
+                                        border-radius: .3rem;
+                                        overflow: hidden;
+                                      }
+                                      .btn20::before{
+                                        content:'¿Cuales son los gastos';
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 50%;
+                                        transform: translate(-50%, -50%);
+                                        font-size: 1.6rem;
+                                        color: #fff;
+                                        text-transform: uppercase;
+                                        letter-spacing: .3rem;
+                                        font-weight: 700;
+                                        text-shadow: .1rem .1rem .1rem #333;
+                                        transition: .2s ease;
+                                      }
+                                      
+                                      .btn20::after{
+                                        content: 'de una propiedad?';
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 50%;
+                                        transform: translate(-50%, -50%) scale(0);
+                                        font-size: 1.6rem;
+                                        color: #fff;
+                                        text-transform: uppercase;
+                                        letter-spacing: .3rem;
+                                        font-weight: 700;
+                                        text-shadow: .1rem .1rem .1rem #333;
+                                        transition: .2s ease;
+                                        opacity: 0;
+                                      }
+                                      
+                                      .btn20:hover::before{
+                                      transform: translate(-50%, -50%) scale(3);
+                                      opacity: 0;
+                                      }
+                                      .btn20:hover::after{
+                                        transform: translate(-50%, -50%) scale(1);
+                                        opacity: 1;
+                                        }
+    
+
+                                        .btn21{
+                                          padding: 2.5rem 49.9%;
+                                          background:#D7BDE2 ;
+                                          border: 0.1rem solid #0a1a2a;
+                                          cursor: pointer;
+                                          position: relative;
+                                          border-radius: .3rem;
+                                          overflow: hidden;
+                                        }
+                                        .btn21::before{
+                                          content:'¿Como puedo';
+                                          position: absolute;
+                                          top: 50%;
+                                          left: 50%;
+                                          transform: translate(-50%, -50%);
+                                          font-size: 1.6rem;
+                                          color: #fff;
+                                          text-transform: uppercase;
+                                          letter-spacing: .3rem;
+                                          font-weight: 700;
+                                          text-shadow: .1rem .1rem .1rem #333;
+                                          transition: .2s ease;
+                                        }
+                                        
+                                        .btn21::after{
+                                          content: 'Generar ingresos?';
+                                          position: absolute;
+                                          top: 50%;
+                                          left: 50%;
+                                          transform: translate(-50%, -50%) scale(0);
+                                          font-size: 1.6rem;
+                                          color: #fff;
+                                          text-transform: uppercase;
+                                          letter-spacing: .3rem;
+                                          font-weight: 700;
+                                          text-shadow: .1rem .1rem .1rem #333;
+                                          transition: .2s ease;
+                                          opacity: 0;
+                                        }
+                                        
+                                        .btn21:hover::before{
+                                        transform: translate(-50%, -50%) scale(3);
+                                        opacity: 0;
+                                        }
+                                        .btn21:hover::after{
+                                          transform: translate(-50%, -50%) scale(1);
+                                          opacity: 1;
+                                          }
+      
+  
+                                          .btn22{
+                                            padding: 2.5rem 49.9%;
+                                            background:#D7BDE2 ;
+                                            border: 0.1rem solid #0a1a2a;
+                                            cursor: pointer;
+                                            position: relative;
+                                            border-radius: .3rem;
+                                            overflow: hidden;
+                                          }
+                                          .btn22::before{
+                                            content:'¿Como puedo generar';
+                                            position: absolute;
+                                            top: 50%;
+                                            left: 50%;
+                                            transform: translate(-50%, -50%);
+                                            font-size: 1.6rem;
+                                            color: #fff;
+                                            text-transform: uppercase;
+                                            letter-spacing: .3rem;
+                                            font-weight: 700;
+                                            text-shadow: .1rem .1rem .1rem #333;
+                                            transition: .2s ease;
+                                          }
+                                          
+                                          .btn22::after{
+                                            content: 'Bienes raices?';
+                                            position: absolute;
+                                            top: 50%;
+                                            left: 50%;
+                                            transform: translate(-50%, -50%) scale(0);
+                                            font-size: 1.6rem;
+                                            color: #fff;
+                                            text-transform: uppercase;
+                                            letter-spacing: .3rem;
+                                            font-weight: 700;
+                                            text-shadow: .1rem .1rem .1rem #333;
+                                            transition: .2s ease;
+                                            opacity: 0;
+                                          }
+                                          
+                                          .btn22:hover::before{
+                                          transform: translate(-50%, -50%) scale(3);
+                                          opacity: 0;
+                                          }
+                                          .btn22:hover::after{
+                                            transform: translate(-50%, -50%) scale(1);
+                                            opacity: 1;
+                                            }
+
+
+                                            .btn23{
+                                              padding: 2.5rem 49.9%;
+                                              background:#D7BDE2 ;
+                                              border: 0.1rem solid #0a1a2a;
+                                              cursor: pointer;
+                                              position: relative;
+                                              border-radius: .3rem;
+                                              overflow: hidden;
+                                            }
+                                            .btn23::before{
+                                              content:'¿Que ingresos';
+                                              position: absolute;
+                                              top: 50%;
+                                              left: 50%;
+                                              transform: translate(-50%, -50%);
+                                              font-size: 1.6rem;
+                                              color: #fff;
+                                              text-transform: uppercase;
+                                              letter-spacing: .3rem;
+                                              font-weight: 700;
+                                              text-shadow: .1rem .1rem .1rem #333;
+                                              transition: .2s ease;
+                                            }
+                                            
+                                            .btn23::after{
+                                              content: 'Debo declarar?';
+                                              position: absolute;
+                                              top: 50%;
+                                              left: 50%;
+                                              transform: translate(-50%, -50%) scale(0);
+                                              font-size: 1.6rem;
+                                              color: #fff;
+                                              text-transform: uppercase;
+                                              letter-spacing: .3rem;
+                                              font-weight: 700;
+                                              text-shadow: .1rem .1rem .1rem #333;
+                                              transition: .2s ease;
+                                              opacity: 0;
+                                            }
+                                            
+                                            .btn23:hover::before{
+                                            transform: translate(-50%, -50%) scale(3);
+                                            opacity: 0;
+                                            }
+                                            .btn23:hover::after{
+                                              transform: translate(-50%, -50%) scale(1);
+                                              opacity: 1;
+                                              }
+
+
+
+                                              .btn24{
+                                                padding: 2.5rem 49.9%;
+                                                background:#D7BDE2 ;
+                                                border: 0.1rem solid #0a1a2a;
+                                                cursor: pointer;
+                                                position: relative;
+                                                border-radius: .3rem;
+                                                overflow: hidden;
+                                              }
+                                              .btn24::before{
+                                                content:'¿Que es la ';
+                                                position: absolute;
+                                                top: 50%;
+                                                left: 50%;
+                                                transform: translate(-50%, -50%);
+                                                font-size: 1.6rem;
+                                                color: #fff;
+                                                text-transform: uppercase;
+                                                letter-spacing: .3rem;
+                                                font-weight: 700;
+                                                text-shadow: .1rem .1rem .1rem #333;
+                                                transition: .2s ease;
+                                              }
+                                              
+                                              .btn24::after{
+                                                content: 'Deduccion de impuestos?';
+                                                position: absolute;
+                                                top: 50%;
+                                                left: 50%;
+                                                transform: translate(-50%, -50%) scale(0);
+                                                font-size: 1.6rem;
+                                                color: #fff;
+                                                text-transform: uppercase;
+                                                letter-spacing: .3rem;
+                                                font-weight: 700;
+                                                text-shadow: .1rem .1rem .1rem #333;
+                                                transition: .2s ease;
+                                                opacity: 0;
+                                              }
+                                              
+                                              .btn24:hover::before{
+                                              transform: translate(-50%, -50%) scale(3);
+                                              opacity: 0;
+                                              }
+                                              .btn24:hover::after{
+                                                transform: translate(-50%, -50%) scale(1);
+                                                opacity: 1;
+                                                }
+        
+
+
+                                                .btn25{
+                                                  padding: 2.5rem 49.9%;
+                                                  background:#D7BDE2 ;
+                                                  border: 0.1rem solid #0a1a2a;
+                                                  cursor: pointer;
+                                                  position: relative;
+                                                  border-radius: .3rem;
+                                                  overflow: hidden;
+                                                }
+                                                .btn25::before{
+                                                  content:'¿Que es un ';
+                                                  position: absolute;
+                                                  top: 50%;
+                                                  left: 50%;
+                                                  transform: translate(-50%, -50%);
+                                                  font-size: 1.6rem;
+                                                  color: #fff;
+                                                  text-transform: uppercase;
+                                                  letter-spacing: .3rem;
+                                                  font-weight: 700;
+                                                  text-shadow: .1rem .1rem .1rem #333;
+                                                  transition: .2s ease;
+                                                }
+                                                
+                                                .btn25::after{
+                                                  content: 'Testamento?';
+                                                  position: absolute;
+                                                  top: 50%;
+                                                  left: 50%;
+                                                  transform: translate(-50%, -50%) scale(0);
+                                                  font-size: 1.6rem;
+                                                  color: #fff;
+                                                  text-transform: uppercase;
+                                                  letter-spacing: .3rem;
+                                                  font-weight: 700;
+                                                  text-shadow: .1rem .1rem .1rem #333;
+                                                  transition: .2s ease;
+                                                  opacity: 0;
+                                                }
+                                                
+                                                .btn25:hover::before{
+                                                transform: translate(-50%, -50%) scale(3);
+                                                opacity: 0;
+                                                }
+                                                .btn25:hover::after{
+                                                  transform: translate(-50%, -50%) scale(1);
+                                                  opacity: 1;
+                                                  }
+
+
+                                                  .btn26{
+                                                    padding: 2.5rem 49.9%;
+                                                    background:#D7BDE2 ;
+                                                    border: 0.1rem solid #0a1a2a;
+                                                    cursor: pointer;
+                                                    position: relative;
+                                                    border-radius: .3rem;
+                                                    overflow: hidden;
+                                                  }
+                                                  .btn26::before{
+                                                    content:'¿Son importantes los ';
+                                                    position: absolute;
+                                                    top: 50%;
+                                                    left: 50%;
+                                                    transform: translate(-50%, -50%);
+                                                    font-size: 1.6rem;
+                                                    color: #fff;
+                                                    text-transform: uppercase;
+                                                    letter-spacing: .3rem;
+                                                    font-weight: 700;
+                                                    text-shadow: .1rem .1rem .1rem #333;
+                                                    transition: .2s ease;
+                                                  }
+                                                  
+                                                  .btn26::after{
+                                                    content: 'Habitos financieros?';
+                                                    position: absolute;
+                                                    top: 50%;
+                                                    left: 50%;
+                                                    transform: translate(-50%, -50%) scale(0);
+                                                    font-size: 1.6rem;
+                                                    color: #fff;
+                                                    text-transform: uppercase;
+                                                    letter-spacing: .3rem;
+                                                    font-weight: 700;
+                                                    text-shadow: .1rem .1rem .1rem #333;
+                                                    transition: .2s ease;
+                                                    opacity: 0;
+                                                  }
+                                                  
+                                                  .btn26:hover::before{
+                                                  transform: translate(-50%, -50%) scale(3);
+                                                  opacity: 0;
+                                                  }
+                                                  .btn26:hover::after{
+                                                    transform: translate(-50%, -50%) scale(1);
+                                                    opacity: 1;
+                                                    }
+      
+
+                                                    .btn27{
+                                                      padding: 2.5rem 49.9%;
+                                                      background:#D7BDE2 ;
+                                                      border: 0.1rem solid #0a1a2a;
+                                                      cursor: pointer;
+                                                      position: relative;
+                                                      border-radius: .3rem;
+                                                      overflow: hidden;
+                                                    }
+                                                    .btn27::before{
+                                                      content:'¿Como puedo ';
+                                                      position: absolute;
+                                                      top: 50%;
+                                                      left: 50%;
+                                                      transform: translate(-50%, -50%);
+                                                      font-size: 1.6rem;
+                                                      color: #fff;
+                                                      text-transform: uppercase;
+                                                      letter-spacing: .3rem;
+                                                      font-weight: 700;
+                                                      text-shadow: .1rem .1rem .1rem #333;
+                                                      transition: .2s ease;
+                                                    }
+                                                    
+                                                    .btn27::after{
+                                                      content: 'Retribuir a los demas?';
+                                                      position: absolute;
+                                                      top: 50%;
+                                                      left: 50%;
+                                                      transform: translate(-50%, -50%) scale(0);
+                                                      font-size: 1.6rem;
+                                                      color: #fff;
+                                                      text-transform: uppercase;
+                                                      letter-spacing: .3rem;
+                                                      font-weight: 700;
+                                                      text-shadow: .1rem .1rem .1rem #333;
+                                                      transition: .2s ease;
+                                                      opacity: 0;
+                                                    }
+                                                    
+                                                    .btn27:hover::before{
+                                                    transform: translate(-50%, -50%) scale(3);
+                                                    opacity: 0;
+                                                    }
+                                                    .btn27:hover::after{
+                                                      transform: translate(-50%, -50%) scale(1);
+                                                      opacity: 1;
+                                                      }
+        
+    
+
+
+
+
+
+
+              /*  inicio de grafica */
+              .bg {
+
+                position: absolute;
+                top: 9px;
+                left: 8px;
+                right: 8px;
+                bottom: 8px;
+                background: url(http://boutique.flarework.com/wp-content/themes/boutique/img/logo_large.png) center 0px no-repeat ;
+                  background-size: contain;
+                  -webkit-filter: drop-shadow(0px 6px 25px rgba(0,0,0,0.5));
+              }
+              
+              .bar {
+                  position: relative;
+                  height: 8px;
+                  background: #6a6a6a;
+                  width:  0%;
+                  top: 0px;
+                  left: 18px;
+                  margin-top: 8px;
+                  box-shadow: 0 0 3px rgba(192,192,192,0.9);
+                  animation: fill 5s infinite alternate, colors 5s infinite alternate;
+              }
+              
+              .bar.fill1 {
+                animation: fill-1 5s infinite alternate, colors 5s infinite alternate;
+              }
+              
+              .bar.fill2 {
+                 animation:  fill-2 5s infinite alternate, colors 5s infinite alternate;
+              }
+              
+              
+              .bar.fill3 {
+                 animation:  fill-3 5s infinite alternate, colors 5s infinite alternate;
+              }
+              
+              
+              .bar.fill4 {
+                 animation:  fill-4 5s infinite alternate, colors 5s infinite alternate;
+              }
+              
+              .bar.fill5 {
+                 animation:  fill-5 5s infinite alternate, colors 5s infinite alternate;
+              }
+              
+              .bar.fill6 {
+                 animation:  fill-6 5s infinite alternate, colors 5s infinite alternate;
+              }
+              
+              
+              
+              @keyframes fill {
+                0%   { width: 0; }
+                33%  { width: 30px;}
+                66%  { width: 10px;}
+                100% { width: 105px; }
+              }
+              
+              @keyframes fill-1 {
+                0%   { width: 0; }
+                33%  { width: 50px;}
+                66%  { width: 20px;}
+                100% { width: 130px; }
+              }
+              
+              @keyframes fill-2 {
+                0%   { width: 0; }
+                33%  { width: 90px;}
+                66%  { width: 70px;}
+                100% { width: 136px; }
+              }
+              
+              @keyframes fill-3 {
+                0%   { width: 0; }
+                33%  { width: 50px;}
+                66%  { width: 24px;}
+                100% { width: 109px; }
+              }
+              
+              @keyframes fill-4 {
+                0%   { width: 0; }
+                33%  { width: 98px;}
+                66%  { width: 34px;}
+                100% { width: 99px; }
+              }
+              
+              @keyframes fill-5 {
+                0%   { width: 0; }
+                33%  { width: 30px;}
+                66%  { width: 10px;}
+                100% { width: 148px; }
+              }
+              
+              
+              @keyframes fill-6 {
+                0%   { width: 0; }
+                33%  { width: 48px;}
+                66%  { width: 22px;}
+                100% { width: 140px; }
+              }
+              
+              @keyframes colors {
+                0% { background-color: #5a5a5a;}
+                50% { background-color: #3a3;}
+                100% { background-color: #6a6a6a;}
+              }
+              
+
+/*  Fin de grafica */
+
+
+
+
+
+
+            
+
+
+
+.box5{
+  cursor: pointer;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+overflow: hidden;
+text-align: center;
+position: relative;
+width: 300px;
+height: 250px;
+background-color: #EAFAF1;
+margin-top: 10%;
+margin-left: 50%;
+transform: translate(-50%,-50%);
+-webkit-transform: translate(-50%,-50%);
+-moz-transform: translate(-50%,-50%);
+-ms-transform: translate(-50%,-50%);
+-o-transform: translate(-50%,-50%);
+width: 75%;
+}
+.box5 h2{
+font-size: 1.8rem ;
+font-weight: 400;
+}
+.box5 i{
+margin-top: 1.5rem;
+color: rgb(127, 47, 255);
+}
+.box5 p{
+padding: 0 1rem;
+text-align: justify;
+font-size: 1.2rem;
+}
+.box5 a{
+cursor: pointer;
+display: inline-block;
+margin-top: 1rem;
+padding: .3rem 2rem;
+background-color: rgb(47, 102, 255);
+color: #fff;
+border-radius: 50px;
+-webkit-border-radius: 50px;
+-moz-border-radius: 50px;
+-ms-border-radius: 50px;
+-o-border-radius: 50px;
+}
+.box5:hover::after{
+width: 100%;
+height: 100%;
+border-left: 4px solid #FF5733;
+border-bottom: 4px solid #FF5733;
+}
+.box5:hover::before{
+border-top: 4px solid #FF5733;
+border-right: 4px solid #FF5733;
+width: 100%;
+height: 100%;
+}
+.box5::after{
+z-index: -1; left: 0; bottom: 0; content: ''; width: 0; height: 0; position: absolute; border-left: 4px solid transparent; border-bottom: 4px solid transparent; transition: all .8s ease; -webkit-transition: all .8s ease; -moz-transition: all .8s ease; -ms-transition: all .8s ease; -o-transition: all .8s ease;
+}
+.box5::before{
+z-index: -1;
+top: 0;
+right: 0;
+content: '';
+position: absolute;
+width: 0;
+height: 0;
+border-top: 4px solid transparent;
+border-right: 4px solid transparent;
+transition: all .8s ease;
+-webkit-transition: all .8s ease;
+-moz-transition: all .8s ease;
+-ms-transition: all .8s ease;
+-o-transition: all .8s ease;
+}
+      
+
+
+

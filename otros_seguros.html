@@ -1,0 +1,481 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="css2.css">
+    <link rel="Website Icon"  href="imagenes/libro1.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Money_Coach</title>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+</head>
+<body>
+
+    <main>
+    <section class="parallax bg">
+        <style>
+            p1{
+                font-size: 100px;
+                color: #FFEEB3;
+            }
+           h6{
+            font-size: 30px;
+           }
+           .justificado{
+            text-align: justify;
+           }
+        </style>
+
+
+ <!--	inicio de titulo--------------->
+
+ 
+ 
+        <p1>MoneyCoach<br><br><h6>Otros seguros</h6>
+        </p1>
+        
+        
+        
+       
+      </section>
+    </main>
+
+     <!--	fin de titulo --------------->
+
+
+     <!--	inicio de menu--------------->
+    <nav><nav>
+
+
+      <ul>
+        <li>
+            <a class="menu servicios" href="MONECOCH.html" data-title="Inicio">
+                <span>
+                    <span>
+                        Inicio
+                    </span>
+                </span>
+            </a>
+
+        </li>
+        <li>
+            <a class="menu proyectos" href="CAPITULOS.html" data-title="Capitulos">
+                <span>
+                    <span>
+                        Capitulos
+                    </span>
+                </span>
+            </a>
+            
+        </li>
+        <li>
+            <a class="menu recursos" href="GLOSARIO.html" data-title="Glosario">
+                <span>
+                    <span>
+                        Glosario
+                    </span>
+                </span>
+            </a>
+            
+        </li>
+        <li>
+            <a class="menu contacto" href="acerca_de.html" data-title="contactanos">
+                <span>
+                    <span>
+                        contactanos
+                    </span>
+                </span>
+            </a>
+            
+        </li>
+    </ul>
+    </nav></nav>
+    
+    <br><br><br>
+
+
+     <!--	fin de menu--------------->
+<br><br><br>
+<div style="height: 1000px;"></div>
+
+<style>
+   
+
+/* INTRO SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.intro {
+  background:darksalmon ;
+  padding: 100px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul {
+  background: #456990;
+  padding: 50px 0;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #fff;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #F45B69;
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #F45B69 transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #F45B69;
+}
+
+time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+  transition: background .5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  background: #F45B69;
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+    /*250+45-6*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #F45B69 transparent transparent;
+  }
+}
+</style>
+
+
+<div >
+<section class="timeline">
+    <ul>
+      <li>
+        <div>
+          <time style="color: #000;">Seguro de Automóvil</time> Un seguro de automóvil te cubrirá parte de las pérdidas económicas que pudieras llegar a tener en caso de un percance o si tu vehículo es robado.
+        </div>
+      </li>
+      <li>
+        <div>
+          <time></time> Existen tres tipos de seguros. Cobertura Básica. cubre los daños que causes a otras personas (terceros). Cobertura Limitada cubre los daños a terceros y el robo de tu automóvil. Cobertura Amplia cubre daños a terceros, robo y daños que pueda sufrir tu automóvil en caso de un siniestro.
+        </div>
+      </li>
+      <li>
+        <div>
+          <time></time> El seguro de automóvil requerirá del pago de un deducible al momento de utilizarlo. Revisa todas las cláusulas y, como siempre, cotiza y compara varias opciones con diferentes aseguradoras
+        </div>
+      </li>
+      <li>
+        <div>
+          <time style="color: #000;">Seguro de Hogar</time> Lo seguros de hogar protegen tu casa o departamento de pérdidas y daños que puedan causarse por incendios, sismos, afectaciones por fenómenos hidrometeorológicos como inundaciones, huracanes, granizo, etcétera.
+        </div>
+      </li>
+      <li>
+        <div>
+          <time></time> Este tipo de seguros también protege tus bienes personales por robos, tus electrónicos y electrodomésticos por descargas eléctricas y los cristales de tu propiedad por roturas.
+        </div>
+      </li>
+      <li>
+        <div>
+          <time></time> Además, los seguros de hogar te brindan cobertura de responsabilidad civil por daños que terceras personas puedan sufrir dentro de tu hogar.
+        </div>
+      </li>
+      <li>
+        <div>
+          <time style="color: #000;">Seguro de Accidentes / Incapacidad</time> ¿Si llegaras a sufrir un accidente, contarías con la capacidad económica para dejar de trabajar duran- te algún tiempo?
+        </div>
+      </li>
+      <li>
+        <div>
+          <time></time> Un seguro de accidentes, incapacidad, o invalidez te permitirá obtener una cantidad de dinero en una exhibición o en mensualidades durante un tiempo definido en caso de sufrir algún accidente o enfermedad que afecte tu capacidad de desarrollar un trabajo o una actividad profesional remunerada, ya sea temporal o permanente.
+        </div>
+      </li>
+      <li>
+        <div>
+          <time></time> Algunos seguros de vida o SGMM ya incluyen este tipo de cobertura como un beneficio agregado.
+        </div>
+      </li>
+      <li>
+        <div>
+          <time style="color: #000;">Seguro de Viaje</time> Un imprevisto en un viaje puede resultar costoso, especialmente si es un viaje al extranjero. Dependiendo del tipo de seguro contratad.
+        </div>
+      </li>
+      <li>
+        <div>
+          <time></time> los seguros de viaje te protegerán en caso de requerir cualquier tipo de asistencia médica, sufrir algún accidente, o tener imprevistos durante tu viaje. como cambios o pérdidas de vuelos, retrasos o pérdidas de equipaje documentado en aerolíneas, etcétera.
+        </div>
+      </li>
+      <li>
+        <div>
+          <time></time> Los gastos médicos en algunos países son más elevados que en México. Sin una cobertura médica en el extranjero, podrías tener que cubrir gastos sumamente elevados en caso de un accidente o emergencia médica.
+        </div>
+      </li>
+    </ul>
+  </section>
+</div>
+
+  <script>
+    (function() {
+
+'use strict';
+
+// define variables
+var items = document.querySelectorAll(".timeline li");
+
+// check if an element is in viewport
+// http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+function isElementInViewport(el) {
+  var rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+function callbackFunc() {
+  for (var i = 0; i < items.length; i++) {
+    if (isElementInViewport(items[i])) {
+      items[i].classList.add("in-view");
+    }
+  }
+}
+
+// listen for events
+window.addEventListener("load", callbackFunc);
+window.addEventListener("resize", callbackFunc);
+window.addEventListener("scroll", callbackFunc);
+
+})();
+  </script>
+
+         <!--	Fin de objetivos con imagenes--------------->
+       
+       <!--	inicio de redes sociales--------------->
+       <div class="container-bar">
+        <input type="checkbox" id="btn-social">
+        <label for="btn-social" class="fa fa-play"></label>
+            <div class="icon-social">
+                <a href="https://www.facebook.com/profile.php?id=100093142003433&mibextid=ZbWKwL" class="fa fa-facebook">
+                    <span id="title">Facebook</span>
+                </a>
+                <a href="https://www.instagram.com/mone_ycouch/?igshid=MzNlNGNkZWQ4Mg%3D%3D" class="fa fa-instagram">
+                    <span id="title">Instagram</span>
+                </a>
+                <a href="https://wa.link/5wkawx" class="fa fa-whatsapp">
+                    <span id="title">
+                        WhatsApp
+                    </span>
+                </a>
+                
+            </div>
+        </div>
+
+            <div style="height: 1200px;"></div>
+            <!--	fin de redes sociales--------------->
+
+             <!--inicio de moneytips	--------------->
+             
+
+
+            <!--fin de moneytips	--------------->
+
+
+             <!--inicio de slider automatico	--------------->
+             <div style="height: 500px;"></div>
+
+             <div class="slider" style="position: absolute;
+             
+             left: 50%;
+             transform: translate(-50%, -50%);">
+                <ul>
+                    <li>
+                        <img src="imagenes/libro1.png">
+                    </li>
+                    <li>
+                        <img src="imagenes/libro2.png">
+                    </li>
+                    <li>
+                        <img src="imagenes/libro3.png" >
+                    </li>
+                    <li>
+                        <img src="imagenes/investor.png" width="20%">
+                    </li>
+                    
+                </ul>
+                <a href="https://investor.com.mx/" class="btn btn-2">InvestorHouse
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+
+
+            <div id="container">
+                
+ 
+       
+        
+        
+    </div>
+    <div style="height: 200px;"></div>
+
+                <!--fin de slider automatico	--------------->
+    
+<!--	inicio de pie de pagina--------------->
+<footer class="pie-pagina">
+  <div class="grupo-1">
+      <div class="box">
+          <figure>
+              <a href="#">
+                  <img src="imagenes/pie.jpg" alt="Logo de SLee Dw">
+              </a>
+          </figure>
+      </div>
+      <div class="box">
+          <h2>SOBRE NOSOTROS</h2>
+          <p><a href="login_formulario/indets.html">Que te parece la pagina?</a></p>
+          
+      </div>
+      <div class="box">
+          <h2>SIGUENOS</h2>
+          <div class="red-social">
+              <a href="https://www.facebook.com/profile.php?id=100093142003433&mibextid=ZbWKwL" class="fa fa-facebook"></a>
+              <a href="https://www.instagram.com/mone_ycouch/?igshid=MzNlNGNkZWQ4Mg%3D%3D" class="fa fa-instagram"></a>
+              <a href="https://wa.link/5wkawx" class="fa fa-whatsapp"></a>
+              
+          </div>
+      </div>
+  </div>
+  <div class="grupo-2">
+      <small>&copy; 2023 <b>SLee Dw</b> - Todos los Derechos Reservados.</small>
+  </div>
+</footer>
+            <!--fin de pie de pagina	--------------->
+
+
+
+             
+
+
+           
+
+</body>
+</html>

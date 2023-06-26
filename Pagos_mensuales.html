@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    
+    <link rel="Website Icon"  href="imagenes/libro1.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Money_Coach</title>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <main>
+    <section class="parallax bg">
+        <style>
+            p1{
+                font-size: 100px;
+                color: #FFEEB3;
+            }
+           h6{
+            font-size: 30px;
+           }
+           .justificado{
+            text-align: justify;
+           }
+        </style>
+
+
+ <!--	inicio de titulo--------------->
+
+ 
+ 
+        <p1>MoneyCoach<br><br><h6>Pagos mensuales</h6>
+        </p1>
+        
+        
+        
+       
+      </section>
+    </main>
+
+     <!--	fin de titulo --------------->
+
+
+     <!--	inicio de menu--------------->
+    <nav><nav>
+
+
+        <ul>
+            <li>
+                <a class="menu servicios" href="MONECOCH.html" data-title="Inicio">
+                    <span>
+                        <span>
+                            Inicio
+                        </span>
+                    </span>
+                </a>
+    
+            </li>
+            <li>
+                <a class="menu proyectos" href="CAPITULOS.html" data-title="Capitulos">
+                    <span>
+                        <span>
+                            Capitulos
+                        </span>
+                    </span>
+                </a>
+                
+            </li>
+            <li>
+                <a class="menu recursos" href="GLOSARIO.html" data-title="Glosario">
+                    <span>
+                        <span>
+                            Glosario
+                        </span>
+                    </span>
+                </a>
+                
+            </li>
+            <li>
+                <a class="menu contacto" href="acerca_de.html" data-title="contactanos">
+                    <span>
+                        <span>
+                            contactanos
+                        </span>
+                    </span>
+                </a>
+                
+            </li>
+        </ul>
+    </nav></nav>
+    
+    <br><br><br><br><br>
+
+
+     <!--	fin de menu--------------->
+     <button class="btn10"></button>
+
+     <!--	inicio de objetivo con imagenes--------------->
+
+     <div style="height: 300px;"></div>
+
+     <style>
+        /*  Inicio de acordeon */
+
+
+ul.acordeon * {
+  font-family: Arial, sans-serif;
+  -webkit-transition: all .6s ease-in-out;
+  -moz-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+/* Contenedor general */
+ul.acordeon {
+  width: 100%; /* Personalizar sncho total */
+  overflow: hidden;
+  padding: 0;
+  background: #FCE4EC;
+  text-align: center;
+  list-style: none;
+  font-size: 0;
+  box-shadow: 0 0 10px #333;
+}
+/* Cada elemento */
+ul.acordeon .li1 {
+  position: relative;
+  display: inline-block;
+ 
+  width: 10%; 
+  height:0;
+  padding-bottom: 40%; /* Ratio aspecto imagen = (height*X)/width */
+  background: #FFDEB4;
+  text-align: center;
+  box-shadow: -2px 0px 8px #000;
+}
+/* Títulos pestañas */
+ul.acordeon .li1 h4 {
+  position: relative;
+  top: 5%;
+  z-index: 1;
+  margin: 0;
+  font-size: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transform-origin: 10% 120%;
+  -moz-transform-origin: 10% 120%;
+  transform-origin: 10% 120%;
+  white-space: nowrap;
+}
+/* Contenido inicialmente oculto */
+ul.acordeon .li1 a, ul.acordeon li img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  
+  display: inline-block;
+  display: inline; zoom: 1; /* IE7 */
+  width: 0;
+  padding:0;
+  background: #333;
+}
+/* Hover: Desplegamos elemento aumentando su ancho */
+ul.acordeon .li1:hover {
+  width: 60%;
+   /* 100 - 10*(nºelem-1) // X=60 para ratio imagen */ 
+  background: #333;
+}
+/* Hover: Hacemos que el título recupere la horizontal y le ponemos un fondo */
+ul.acordeon .li1:hover h4 {
+  padding-left: 10px;
+  background: rgba(143,34,80,.8);
+  color: #eee;
+  -webkit-transform: none;
+  -moz-transform: none;
+  transform: none;
+}
+/* Hover: Expandimos el contenido */
+ul.acordeon .li1:hover a, ul.acordeon .li1:hover a img {
+  width: 100%; 
+}
+/* Ajustes para resoluciones pequeñas */
+@media(max-width:600px) {
+  ul.acordeon .li1 h4 {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+}
+
+/* VARIACIONES PARA CONSEGUIR QUE EL MENU OCUPE INICIALMENTE TODO EL ANCHO 
+ul.acordeon li {
+  width: 20%;
+}
+ul.acordeon:hover li {
+  width: 10%;
+}
+ul.acordeon li:hover {
+  width: 60%;
+}
+*/
+
+
+
+
+
+
+
+/*  Fin de acordeon */
+     </style>
+
+     <ul class="acordeon">
+        <li class="li1">
+          <h4 style="color: #000;">PAGOS MENSUALES</h4>
+          <a href="#">
+            <div class="cards-grid">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="background: #90CAF9;">
+        
+                        </div>
+                        <div class="flip-card-back">
+        
+                           <P style="font-size: 14px; text-align: justify;">Organizar tus pagos mensuales y hacerlos a tiempo te ayudara a tener orden en tus finanzas, pero, además, a evitar problemas en tu reporte de crédito, intereses moratorios, y gastos innecesarios por pagos tardíos. <br><br>
+                            En el mundo actual, si bien cada día contamos con más pagos recurrentes también es muy sencillo tener un sistema de organización para efectuarlos. </P> 
+
+        
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="background: pink;">
+                            
+                        </div>
+                        <div class="flip-card-back">
+                            <p style="font-size: 13.9px; text-align: justify;"> No se trata de ser alarmista pero un pago recurrente hecho fuera de tiempo o no efectuado, puede tener consecuencias muy negativas en tus finanzas personales durante muchos años. <br><br>
+                                Cualquier pago mensual por ejemplo un plan de celular, paquete de televisión o de internet, recibo de algún otro servicio contratado, podría aparecer en tu reporte de crédito y afectarte de forma negativa por muchos años.</p>
+                           
+
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="background: plum;">
+        
+                        </div>
+                        <div class="flip-card-back">
+                            En relación con cada pago recurrente es la fecha de corte que es la fecha a partir de la cual debes efectuar el pago.
+                            Siempre ten presente la fecha corte de cada pago, no la fecha límite.
+                                    
+        
+                        </div>
+                    </div>
+                </div>
+        
+                
+            </div>
+            
+          </a>
+        </li>
+        <li  class="li1">
+          <h4 style="color: #000;">TIPS</h4>
+          <a href="#">
+           
+            <div class="cards-grid">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="background: #90CAF9;">
+        
+                        </div>
+                        <div class="flip-card-back">
+        
+                           <h6 class="uwu">1.	lista tus pagos </h6>
+                            <p style="font-size: 25px; ;"> crea una liste de ellos en orden de importancia.</p>
+        
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="background: pink;">
+                            
+                        </div>
+                        <div class="flip-card-back">
+
+                           
+                            <h6 class="uwu">2.	fecha de corte, limite y cantidad </h6>
+                            <p style="font-size: 25px; ;"> incluye cada corte de cada servicio.</p>
+
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="background: plum;">
+                            
+                        </div>
+                        <div class="flip-card-back">
+                            
+                            <h6 class="uwu">3.	monitoreo y disciplina </h6>
+                            <p style="font-size: 25px; ;"> monitorea cada mes los pagos y nunca olvides realizarlos a tiempo </p>
+                        </div>
+                    </div>
+                </div>
+        
+                
+            </div>
+            
+        </a>
+        </li>
+
+        
+      </ul>
+	        
+      
+
+            
+
+
+         <!--	Fin de objetivos con imagenes--------------->
+       
+       <!--	inicio de redes sociales--------------->
+       <div class="container-bar">
+        <input type="checkbox" id="btn-social">
+        <label for="btn-social" class="fa fa-play"></label>
+            <div class="icon-social">
+                <a href="https://www.facebook.com/profile.php?id=100093142003433&mibextid=ZbWKwL" class="fa fa-facebook">
+                    <span id="title">Facebook</span>
+                </a>
+                <a href="https://www.instagram.com/mone_ycouch/?igshid=MzNlNGNkZWQ4Mg%3D%3D" class="fa fa-instagram">
+                    <span id="title">Instagram</span>
+                </a>
+                <a href="https://wa.link/5wkawx" class="fa fa-whatsapp">
+                    <span id="title">
+                        WhatsApp
+                    </span>
+                </a>
+                
+            </div>
+        </div>
+
+
+            <!--	fin de redes sociales--------------->
+
+             <!--inicio de moneytips	--------------->
+             <div class="contenedor">
+                <a href="#">
+                     <figure>
+                        
+                         <div class="capa">
+                             <h3><strong>#MONEY</strong></h3>
+                             <p>asegurate de elejir una buena aplicacion que te permita clasificarlos por categorias</p>
+                         </div>
+                     </figure>
+                 </a>
+             </div>
+
+
+            <!--fin de moneytips	--------------->
+
+
+             <!--inicio de slider automatico	--------------->
+
+
+             <div style="height: 500px;"></div>
+
+             <div class="slider" style="position: absolute;
+             
+             left: 50%;
+             transform: translate(-50%, -50%);">
+                <ul>
+                    <li>
+                        <img src="imagenes/libro1.png">
+                    </li>
+                    <li>
+                        <img src="imagenes/libro2.png">
+                    </li>
+                    <li>
+                        <img src="imagenes/libro3.png" >
+                    </li>
+                    <li>
+                        <img src="imagenes/investor.png" width="20%">
+                    </li>
+                    
+                </ul>
+                <a href="https://investor.com.mx/" class="btn btn-2">InvestorHouse
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+
+
+            <div id="container">
+                
+ 
+       
+        
+        
+    </div>
+    <div style="height: 200px;"></div>
+            
+              
+
+                <!--fin de slider automatico	--------------->
+    
+<!--	inicio de pie de pagina--------------->
+
+<footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <a href="#">
+                    <img src="imagenes/pie.jpg" alt="Logo de SLee Dw">
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>SOBRE NOSOTROS</h2>
+            <p><a href="login_formulario/indets.html">Que te parece la pagina?</a></p>
+            
+        </div>
+        <div class="box">
+            <h2>SIGUENOS</h2>
+            <div class="red-social">
+                <a href="https://www.facebook.com/profile.php?id=100093142003433&mibextid=ZbWKwL" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/mone_ycouch/?igshid=MzNlNGNkZWQ4Mg%3D%3D" class="fa fa-instagram"></a>
+                <a href="https://wa.link/5wkawx" class="fa fa-whatsapp"></a>
+                
+            </div>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>&copy; 2023 <b>SLee Dw</b> - Todos los Derechos Reservados.</small>
+    </div>
+</footer>
+
+            <!--fin de pie de pagina	--------------->
+
+
+
+             
+
+
+           
+
+</body>
+</html>

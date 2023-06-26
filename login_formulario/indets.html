@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="Website Icon"  href="libro2.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Money_Coach</title>
+
+</head>
+<body style="display: flex; align-items: center; justify-content: center; text-align: center; background: linear-gradient(to left, #D2B4DE, #B2EBF2 );" >
+       
+    <style>
+
+
+
+.formulario {
+  width: 650px;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 30px;
+  padding: 20px;
+  box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
+  position: relative;
+}
+.formulario__titulo {
+  text-align: center;
+  margin-top: 0;
+  color: rgba(0,0,0,0.7);
+}
+.formulario__input, .formulario__label, .formulario__submit {
+  display: block;
+  width: 94%;
+  font-size: 1.3em;
+}
+.formulario__input {
+  padding: 20px;
+  background: rgba(0,0,0,0.1);
+  border: 1px solid rgba(0,0,0,0.3);
+  margin-bottom: 40px;
+  border-radius: 20px;
+}
+.formulario__input:focus {
+  outline: 1px solid rgba(0,0,0,0.7);
+}
+.formulario__input:focus + .formulario__label{
+  margin-top: -135px;
+}
+.formulario__label {
+  padding-left: 15px;
+  position: absolute;
+  margin-top: -85px;
+  z-index: -20;
+  color: rgba(0,0,0,0.5);
+  transition: all 0.2s;
+}
+.formulario__submit {
+  background: rgba(0,0,0,0.7);
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+}
+.fijar {
+  margin-top: -135px;
+}
+
+.formulario__aa, .formulario__label, .formulario__submit {
+  
+  width: 50%;
+  font-size: 1.3em;
+}
+.formulario__aa {
+  padding: 2px;
+  background: rgba(0,0,0,0.1);
+  border: 1px solid rgba(0,0,0,0.3);
+  margin-bottom: 40px;
+  border-radius: 20px;
+  
+}
+.formulario__aa:focus {
+  outline: 1px solid rgba(0,0,0,0.7);
+  
+}
+.formulario__aa:focus + .formulario__label{
+  margin-top: -135px;
+}
+    </style>
+
+
+    <form class="formulario" method="post" action="registro.php">
+        <h2>FORMULARIO DE SATISFACCION </h2>
+        <div style="height: 50px;"></div>
+         <!--pregunta 1--> 
+         <div>
+            <label class="formulario__input" for="">¿Cómo calificarías tu experiencia con nuestra pagina?</label>
+        <select class="formulario__aa" name="satisfaccion" id="">
+            <option value="#" style="display: flex; align-items: center; justify-content: center; text-align: center;">Seleccione una opcion</option>
+            
+            <option value="satisfactoria" style="display: flex; align-items: center; justify-content: center; text-align: center;">Satisfactoria</option>
+            <option value="totalmente satisfactoria"style="display: flex; align-items: center; justify-content: center; text-align: center;">Totalmente satisfactoria</option>
+            <option value="neutra"style="display: flex; align-items: center; justify-content: center; text-align: center;">Neutra</option>
+            
+            <option value="totalmente insatisfactoria"style="display: flex; align-items: center; justify-content: center; text-align: center;">Totalmente insatisfactoria</option>
+             <option value="insatisfactoria"style="display: flex; align-items: center; justify-content: center; text-align: center;">Insatisfactoria</option>
+
+
+        </select>
+         </div> <br><br><br><br>
+         <!--pregunta 2--> 
+         <div>
+            <label class="formulario__input"  for="">Considerando tu experiencia con nuestra pagina, ¿Qué probabilidad hay de que nos recomiendes a un amigo o familiar?</label>
+            <select class="formulario__aa" name="escala" id="" style="width: 30%;">
+                <optgroup label="altas"style="display: flex; align-items: center; justify-content: center; text-align: center;">
+                <option value="10" style="display: flex; align-items: center; justify-content: center; text-align: center;">10</option>
+                <option value="9"style="display: flex; align-items: center; justify-content: center; text-align: center;">9</option>
+                <option value="8"style="display: flex; align-items: center; justify-content: center; text-align: center;">8</option>
+                <option value="7"style="display: flex; align-items: center; justify-content: center; text-align: center;">7</option>
+                <option value="6"style="display: flex; align-items: center; justify-content: center; text-align: center;">6</option>
+            </optgroup>
+            <optgroup label="bajas"style="display: flex; align-items: center; justify-content: center; text-align: center;">
+                <option value="5"style="display: flex; align-items: center; justify-content: center; text-align: center;">5</option>
+                <option value="4"style="display: flex; align-items: center; justify-content: center; text-align: center;">4</option>
+                <option value="3"style="display: flex; align-items: center; justify-content: center; text-align: center;">3</option>
+                <option value="2"style="display: flex; align-items: center; justify-content: center; text-align: center;">2</option>
+                <option value="1"style="display: flex; align-items: center; justify-content: center; text-align: center;">1</option>
+            </optgroup>
+            </select>
+        </div><br><br><br><br><br>
+        <!--pregunta 3--> 
+        <div>
+            <label class="formulario__input" for="">¿Crees que el contenido de la pagina es de calida?</label>
+        <select class="formulario__aa" name="expectativas" id="">
+            <option value="#"style="display: flex; align-items: center; justify-content: center; text-align: center;">Seleccione una opcion</option>
+            <option value="muy bien"style="display: flex; align-items: center; justify-content: center; text-align: center;">Muy bien</option>
+            <option value="bien"style="display: flex; align-items: center; justify-content: center; text-align: center;">Bien</option>
+            <option value="promedio"style="display: flex; align-items: center; justify-content: center; text-align: center;">Promedio</option>
+            <option value="apenas"style="display: flex; align-items: center; justify-content: center; text-align: center;">Apenas</option>
+        </select>
+         </div> <br><br><br><br><br>
+         <!--pregunta 4--> 
+        <div>
+            <label class="formulario__input" for="">¿Cuál es la característica que más te gusta de nuestra pagina? </label>
+            <textarea name="caracteristica" id="" cols="50" rows="5"></textarea>
+         </div> <br><br><br><br>
+        <!--pregunta 5--> 
+        <div>
+            <label  class="formulario__input" for="">¿En que aspectos puede mejorar nusestra pagina?</label>
+            <textarea  name="receptivos" id="" cols="50" rows="5" ></textarea>
+
+            
+        </div><br><br><br><br><br>
+        <!--botones-->
+         <button type="submit">enviar <img src="send_icon_151111.png" alt="" height="15px" width="15px"> </button>
+        
+         <button type="reset">borrar <img src="seo-social-web-network-internet_262_icon-icons.com_61518.png" alt="" height="15px" width="15px"> </button>
+         
+        </form>
+    
+
+    
+</body>
+</html>
+
